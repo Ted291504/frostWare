@@ -372,31 +372,31 @@ UICorner_16.Parent = TextButton
 
 -- Scripts:
 
-local function GQDPM_fake_script() -- Executor.LocalScript 
+local function IJLGRGQ_fake_script() -- Executor.LocalScript 
 	local script = Instance.new('LocalScript', Executor)
 
 	
 end
-coroutine.wrap(GQDPM_fake_script)()
-local function EQFNEVN_fake_script() -- home.LocalScript 
+coroutine.wrap(IJLGRGQ_fake_script)()
+local function FOWK_fake_script() -- home.LocalScript 
 	local script = Instance.new('LocalScript', home)
 
 	
 end
-coroutine.wrap(EQFNEVN_fake_script)()
-local function CRGRFS_fake_script() -- Settings.LocalScript 
+coroutine.wrap(FOWK_fake_script)()
+local function KDHTN_fake_script() -- Settings.LocalScript 
 	local script = Instance.new('LocalScript', Settings)
 
 	
 end
-coroutine.wrap(CRGRFS_fake_script)()
-local function DAVV_fake_script() -- Clear.LocalScript 
+coroutine.wrap(KDHTN_fake_script)()
+local function IWFUF_fake_script() -- Clear.LocalScript 
 	local script = Instance.new('LocalScript', Clear)
 
 	
 end
-coroutine.wrap(DAVV_fake_script)()
-local function HLMI_fake_script() -- Execute.LocalScript 
+coroutine.wrap(IWFUF_fake_script)()
+local function JXHWZIS_fake_script() -- Execute.LocalScript 
 	local script = Instance.new('LocalScript', Execute)
 
 	local TextBox = script.Parent.Parent
@@ -414,20 +414,20 @@ local function HLMI_fake_script() -- Execute.LocalScript
 	end)
 	
 end
-coroutine.wrap(HLMI_fake_script)()
-local function HCRLZYL_fake_script() -- Paste.LocalScript 
+coroutine.wrap(JXHWZIS_fake_script)()
+local function VUSMVY_fake_script() -- Paste.LocalScript 
 	local script = Instance.new('LocalScript', Paste)
 
 	
 end
-coroutine.wrap(HCRLZYL_fake_script)()
-local function CYOAE_fake_script() -- ImageButton.LocalScript 
+coroutine.wrap(VUSMVY_fake_script)()
+local function DTCYX_fake_script() -- ImageButton.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton)
 
 	
 end
-coroutine.wrap(CYOAE_fake_script)()
-local function RQPN_fake_script() -- ImageLabel_3.LocalScript 
+coroutine.wrap(DTCYX_fake_script)()
+local function YJAT_fake_script() -- ImageLabel_3.LocalScript 
 	local script = Instance.new('LocalScript', ImageLabel_3)
 
 	local Players = game:GetService("Players")
@@ -436,8 +436,8 @@ local function RQPN_fake_script() -- ImageLabel_3.LocalScript
 	local content = Players:GetUserThumbnailAsync(Player.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size150x150)
 	script.Parent.Image = content
 end
-coroutine.wrap(RQPN_fake_script)()
-local function ZJUD_fake_script() -- TextLabel_2.LocalScript 
+coroutine.wrap(YJAT_fake_script)()
+local function HUBRN_fake_script() -- TextLabel_2.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_2)
 
 	local textLabel = script.Parent
@@ -447,8 +447,8 @@ local function ZJUD_fake_script() -- TextLabel_2.LocalScript
 	textLabel.TextWrapped = true
 	
 end
-coroutine.wrap(ZJUD_fake_script)()
-local function WGCPZ_fake_script() -- Time.LocalScript 
+coroutine.wrap(HUBRN_fake_script)()
+local function PKZP_fake_script() -- Time.LocalScript 
 	local script = Instance.new('LocalScript', Time)
 
 	
@@ -466,14 +466,14 @@ local function WGCPZ_fake_script() -- Time.LocalScript
 	updateTime()
 	
 end
-coroutine.wrap(WGCPZ_fake_script)()
-local function OIGXRD_fake_script() -- Main.LocalScript 
+coroutine.wrap(PKZP_fake_script)()
+local function VMWWWMH_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 
 	-- a
 end
-coroutine.wrap(OIGXRD_fake_script)()
-local function BWJTU_fake_script() -- Search.LocalScript 
+coroutine.wrap(VMWWWMH_fake_script)()
+local function RLPD_fake_script() -- Search.LocalScript 
 	local script = Instance.new('LocalScript', Search)
 
 	local HttpService = game:GetService("HttpService")
@@ -483,9 +483,9 @@ local function BWJTU_fake_script() -- Search.LocalScript
 	local resultsFrame = searchBox:FindFirstChild("ScrollingFrame")
 	
 	-- Ensure ScrollingFrame properties are set correctly
-	resultsFrame.CanvasSize = UDim2.new(0, 0, 1, 0)  -- Set to adjust as buttons are added
-	resultsFrame.ScrollBarThickness = 8
-	resultsFrame.VerticalScrollBarPosition = Enum.ScrollBarPosition.Left
+	resultsFrame.CanvasSize = UDim2.new(0, 0, 1, 0)  -- Adjust to fit buttons as they are added
+	resultsFrame.ScrollBarThickness = 8  -- Adjust thickness of scrollbar
+	resultsFrame.ScrollBarImageColor3 = Color3.fromRGB(100, 100, 100)  -- Color of the scrollbar
 	
 	-- Function to create script display buttons
 	local function createScriptButton(script, index)
@@ -496,24 +496,25 @@ local function BWJTU_fake_script() -- Search.LocalScript
 	
 		button.Name = "ScriptButton"
 		button.Parent = resultsFrame
-		button.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+		button.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 		button.BorderSizePixel = 0
-		button.Position = UDim2.new(0, 10, 0, (index - 1) * 80 + 10)  -- Adjusted position
-		button.Size = UDim2.new(0, 300, 0, 70)  -- Improved button size
+		button.Position = UDim2.new(0, 10, 0, (index - 1) * 90 + 10)  -- Adjusted position
+		button.Size = UDim2.new(0, 320, 0, 80)  -- Improved button size
 		button.ClipsDescendants = true
 	
 		-- Configure image
 		buttonImage.Parent = button
 		buttonImage.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
 		buttonImage.Position = UDim2.new(0, 5, 0, 5)
-		buttonImage.Size = UDim2.new(0, 60, 0, 60)
+		buttonImage.Size = UDim2.new(0, 70, 0, 70)
 		buttonImage.Image = script.image or "rbxassetid://0"  -- Default image if not provided
+		buttonImage.ScaleType = Enum.ScaleType.Crop
 	
 		-- Configure text label
 		buttonText.Parent = button
 		buttonText.BackgroundTransparency = 1
-		buttonText.Position = UDim2.new(0, 75, 0, 5)
-		buttonText.Size = UDim2.new(0, 220, 0, 60)  -- Adjusted size to fit text and image
+		buttonText.Position = UDim2.new(0, 80, 0, 5)
+		buttonText.Size = UDim2.new(0, 230, 0, 70)  -- Adjusted size to fit text and image
 		buttonText.TextColor3 = Color3.fromRGB(255, 255, 255)
 		buttonText.TextSize = 16
 		buttonText.Text = script.title or "No title available"
@@ -536,7 +537,7 @@ local function BWJTU_fake_script() -- Search.LocalScript
 		end)
 	
 		-- Update CanvasSize for scrolling
-		resultsFrame.CanvasSize = UDim2.new(0, 0, 0, (index - 1) * 80 + 80)
+		resultsFrame.CanvasSize = UDim2.new(0, 0, 0, (index - 1) * 90 + 90)
 	end
 	
 	-- Function to fetch scripts from the API
@@ -560,7 +561,12 @@ local function BWJTU_fake_script() -- Search.LocalScript
 			return {}
 		end
 	
-		return data.result.scripts or {}
+		if data.result and data.result.scripts then
+			return data.result.scripts
+		else
+			warn("Unexpected API response format: " .. tostring(data))
+			return {}
+		end
 	end
 	
 	-- Function to clear previous search results
@@ -578,11 +584,18 @@ local function BWJTU_fake_script() -- Search.LocalScript
 		if query ~= "" then
 			clearResults()
 			local scripts = fetchScripts(query)
+			if #scripts == 0 then
+				warn("No scripts found.")
+			end
 			for i, script in ipairs(scripts) do
-				createScriptButton(script, i)
+				if script.title and script.script then
+					createScriptButton(script, i)
+				else
+					warn("Script missing title or content: " .. tostring(script))
+				end
 			end
 		end
 	end)
 	
 end
-coroutine.wrap(BWJTU_fake_script)()
+coroutine.wrap(RLPD_fake_script)()
