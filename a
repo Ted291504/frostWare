@@ -372,31 +372,31 @@ UICorner_16.Parent = TextButton
 
 -- Scripts:
 
-local function RPYC_fake_script() -- Executor.LocalScript 
+local function GQDPM_fake_script() -- Executor.LocalScript 
 	local script = Instance.new('LocalScript', Executor)
 
 	
 end
-coroutine.wrap(RPYC_fake_script)()
-local function SXOCFSF_fake_script() -- home.LocalScript 
+coroutine.wrap(GQDPM_fake_script)()
+local function EQFNEVN_fake_script() -- home.LocalScript 
 	local script = Instance.new('LocalScript', home)
 
 	
 end
-coroutine.wrap(SXOCFSF_fake_script)()
-local function MLPXAZA_fake_script() -- Settings.LocalScript 
+coroutine.wrap(EQFNEVN_fake_script)()
+local function CRGRFS_fake_script() -- Settings.LocalScript 
 	local script = Instance.new('LocalScript', Settings)
 
 	
 end
-coroutine.wrap(MLPXAZA_fake_script)()
-local function ZQEOCG_fake_script() -- Clear.LocalScript 
+coroutine.wrap(CRGRFS_fake_script)()
+local function DAVV_fake_script() -- Clear.LocalScript 
 	local script = Instance.new('LocalScript', Clear)
 
 	
 end
-coroutine.wrap(ZQEOCG_fake_script)()
-local function UORSWK_fake_script() -- Execute.LocalScript 
+coroutine.wrap(DAVV_fake_script)()
+local function HLMI_fake_script() -- Execute.LocalScript 
 	local script = Instance.new('LocalScript', Execute)
 
 	local TextBox = script.Parent.Parent
@@ -414,20 +414,20 @@ local function UORSWK_fake_script() -- Execute.LocalScript
 	end)
 	
 end
-coroutine.wrap(UORSWK_fake_script)()
-local function PCJA_fake_script() -- Paste.LocalScript 
+coroutine.wrap(HLMI_fake_script)()
+local function HCRLZYL_fake_script() -- Paste.LocalScript 
 	local script = Instance.new('LocalScript', Paste)
 
 	
 end
-coroutine.wrap(PCJA_fake_script)()
-local function YUBYGGS_fake_script() -- ImageButton.LocalScript 
+coroutine.wrap(HCRLZYL_fake_script)()
+local function CYOAE_fake_script() -- ImageButton.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton)
 
 	
 end
-coroutine.wrap(YUBYGGS_fake_script)()
-local function GEUNRNQ_fake_script() -- ImageLabel_3.LocalScript 
+coroutine.wrap(CYOAE_fake_script)()
+local function RQPN_fake_script() -- ImageLabel_3.LocalScript 
 	local script = Instance.new('LocalScript', ImageLabel_3)
 
 	local Players = game:GetService("Players")
@@ -436,8 +436,8 @@ local function GEUNRNQ_fake_script() -- ImageLabel_3.LocalScript
 	local content = Players:GetUserThumbnailAsync(Player.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size150x150)
 	script.Parent.Image = content
 end
-coroutine.wrap(GEUNRNQ_fake_script)()
-local function BFTKS_fake_script() -- TextLabel_2.LocalScript 
+coroutine.wrap(RQPN_fake_script)()
+local function ZJUD_fake_script() -- TextLabel_2.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_2)
 
 	local textLabel = script.Parent
@@ -447,8 +447,8 @@ local function BFTKS_fake_script() -- TextLabel_2.LocalScript
 	textLabel.TextWrapped = true
 	
 end
-coroutine.wrap(BFTKS_fake_script)()
-local function GKZMSYL_fake_script() -- Time.LocalScript 
+coroutine.wrap(ZJUD_fake_script)()
+local function WGCPZ_fake_script() -- Time.LocalScript 
 	local script = Instance.new('LocalScript', Time)
 
 	
@@ -466,14 +466,14 @@ local function GKZMSYL_fake_script() -- Time.LocalScript
 	updateTime()
 	
 end
-coroutine.wrap(GKZMSYL_fake_script)()
-local function UJRVVOX_fake_script() -- Main.LocalScript 
+coroutine.wrap(WGCPZ_fake_script)()
+local function OIGXRD_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 
 	-- a
 end
-coroutine.wrap(UJRVVOX_fake_script)()
-local function IHRYX_fake_script() -- Search.LocalScript 
+coroutine.wrap(OIGXRD_fake_script)()
+local function BWJTU_fake_script() -- Search.LocalScript 
 	local script = Instance.new('LocalScript', Search)
 
 	local HttpService = game:GetService("HttpService")
@@ -585,4 +585,4 @@ local function IHRYX_fake_script() -- Search.LocalScript
 	end)
 	
 end
-coroutine.wrap(IHRYX_fake_script)()
+coroutine.wrap(BWJTU_fake_script)()
