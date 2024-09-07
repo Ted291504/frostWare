@@ -372,31 +372,31 @@ UICorner_16.Parent = TextButton
 
 -- Scripts:
 
-local function HPEHJZ_fake_script() -- Executor.LocalScript 
+local function RPYC_fake_script() -- Executor.LocalScript 
 	local script = Instance.new('LocalScript', Executor)
 
 	
 end
-coroutine.wrap(HPEHJZ_fake_script)()
-local function LFYXXBB_fake_script() -- home.LocalScript 
+coroutine.wrap(RPYC_fake_script)()
+local function SXOCFSF_fake_script() -- home.LocalScript 
 	local script = Instance.new('LocalScript', home)
 
 	
 end
-coroutine.wrap(LFYXXBB_fake_script)()
-local function RJEAF_fake_script() -- Settings.LocalScript 
+coroutine.wrap(SXOCFSF_fake_script)()
+local function MLPXAZA_fake_script() -- Settings.LocalScript 
 	local script = Instance.new('LocalScript', Settings)
 
 	
 end
-coroutine.wrap(RJEAF_fake_script)()
-local function XNDKQL_fake_script() -- Clear.LocalScript 
+coroutine.wrap(MLPXAZA_fake_script)()
+local function ZQEOCG_fake_script() -- Clear.LocalScript 
 	local script = Instance.new('LocalScript', Clear)
 
 	
 end
-coroutine.wrap(XNDKQL_fake_script)()
-local function MZUE_fake_script() -- Execute.LocalScript 
+coroutine.wrap(ZQEOCG_fake_script)()
+local function UORSWK_fake_script() -- Execute.LocalScript 
 	local script = Instance.new('LocalScript', Execute)
 
 	local TextBox = script.Parent.Parent
@@ -414,20 +414,20 @@ local function MZUE_fake_script() -- Execute.LocalScript
 	end)
 	
 end
-coroutine.wrap(MZUE_fake_script)()
-local function EQOBJZD_fake_script() -- Paste.LocalScript 
+coroutine.wrap(UORSWK_fake_script)()
+local function PCJA_fake_script() -- Paste.LocalScript 
 	local script = Instance.new('LocalScript', Paste)
 
 	
 end
-coroutine.wrap(EQOBJZD_fake_script)()
-local function NADPSAL_fake_script() -- ImageButton.LocalScript 
+coroutine.wrap(PCJA_fake_script)()
+local function YUBYGGS_fake_script() -- ImageButton.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton)
 
 	
 end
-coroutine.wrap(NADPSAL_fake_script)()
-local function PVQNAY_fake_script() -- ImageLabel_3.LocalScript 
+coroutine.wrap(YUBYGGS_fake_script)()
+local function GEUNRNQ_fake_script() -- ImageLabel_3.LocalScript 
 	local script = Instance.new('LocalScript', ImageLabel_3)
 
 	local Players = game:GetService("Players")
@@ -436,8 +436,8 @@ local function PVQNAY_fake_script() -- ImageLabel_3.LocalScript
 	local content = Players:GetUserThumbnailAsync(Player.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size150x150)
 	script.Parent.Image = content
 end
-coroutine.wrap(PVQNAY_fake_script)()
-local function QIURPL_fake_script() -- TextLabel_2.LocalScript 
+coroutine.wrap(GEUNRNQ_fake_script)()
+local function BFTKS_fake_script() -- TextLabel_2.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_2)
 
 	local textLabel = script.Parent
@@ -447,8 +447,8 @@ local function QIURPL_fake_script() -- TextLabel_2.LocalScript
 	textLabel.TextWrapped = true
 	
 end
-coroutine.wrap(QIURPL_fake_script)()
-local function FREPU_fake_script() -- Time.LocalScript 
+coroutine.wrap(BFTKS_fake_script)()
+local function GKZMSYL_fake_script() -- Time.LocalScript 
 	local script = Instance.new('LocalScript', Time)
 
 	
@@ -466,14 +466,14 @@ local function FREPU_fake_script() -- Time.LocalScript
 	updateTime()
 	
 end
-coroutine.wrap(FREPU_fake_script)()
-local function ADXIVV_fake_script() -- Main.LocalScript 
+coroutine.wrap(GKZMSYL_fake_script)()
+local function UJRVVOX_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 
 	-- a
 end
-coroutine.wrap(ADXIVV_fake_script)()
-local function DHNV_fake_script() -- Search.LocalScript 
+coroutine.wrap(UJRVVOX_fake_script)()
+local function IHRYX_fake_script() -- Search.LocalScript 
 	local script = Instance.new('LocalScript', Search)
 
 	local HttpService = game:GetService("HttpService")
@@ -489,19 +489,36 @@ local function DHNV_fake_script() -- Search.LocalScript
 	
 	-- Function to create script display buttons
 	local function createScriptButton(script, index)
-		local button = Instance.new("TextButton")
+		local button = Instance.new("Frame")
+		local buttonImage = Instance.new("ImageLabel")
+		local buttonText = Instance.new("TextLabel")
 		local UICorner = Instance.new("UICorner")
 	
+		button.Name = "ScriptButton"
 		button.Parent = resultsFrame
-		button.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
+		button.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
 		button.BorderSizePixel = 0
-		button.Position = UDim2.new(0, 10, 0, (index - 1) * 50 + 10)  -- Adjusted position
-		button.Size = UDim2.new(0, 200, 0, 45)  -- Improved button size
-		button.TextColor3 = Color3.fromRGB(255, 255, 255)
-		button.TextSize = 16
-		button.Text = script.title or "No title available"
-		button.TextScaled = true
-		button.TextWrapped = true
+		button.Position = UDim2.new(0, 10, 0, (index - 1) * 80 + 10)  -- Adjusted position
+		button.Size = UDim2.new(0, 300, 0, 70)  -- Improved button size
+		button.ClipsDescendants = true
+	
+		-- Configure image
+		buttonImage.Parent = button
+		buttonImage.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+		buttonImage.Position = UDim2.new(0, 5, 0, 5)
+		buttonImage.Size = UDim2.new(0, 60, 0, 60)
+		buttonImage.Image = script.image or "rbxassetid://0"  -- Default image if not provided
+	
+		-- Configure text label
+		buttonText.Parent = button
+		buttonText.BackgroundTransparency = 1
+		buttonText.Position = UDim2.new(0, 75, 0, 5)
+		buttonText.Size = UDim2.new(0, 220, 0, 60)  -- Adjusted size to fit text and image
+		buttonText.TextColor3 = Color3.fromRGB(255, 255, 255)
+		buttonText.TextSize = 16
+		buttonText.Text = script.title or "No title available"
+		buttonText.TextWrapped = true
+		buttonText.TextScaled = true
 	
 		UICorner.Parent = button
 	
@@ -519,7 +536,7 @@ local function DHNV_fake_script() -- Search.LocalScript
 		end)
 	
 		-- Update CanvasSize for scrolling
-		resultsFrame.CanvasSize = UDim2.new(0, 0, 0, (index - 1) * 50 + 55)
+		resultsFrame.CanvasSize = UDim2.new(0, 0, 0, (index - 1) * 80 + 80)
 	end
 	
 	-- Function to fetch scripts from the API
@@ -549,7 +566,7 @@ local function DHNV_fake_script() -- Search.LocalScript
 	-- Function to clear previous search results
 	local function clearResults()
 		for _, child in ipairs(resultsFrame:GetChildren()) do
-			if child:IsA("TextButton") then
+			if child:IsA("Frame") and child.Name == "ScriptButton" then
 				child:Destroy()
 			end
 		end
@@ -568,4 +585,4 @@ local function DHNV_fake_script() -- Search.LocalScript
 	end)
 	
 end
-coroutine.wrap(DHNV_fake_script)()
+coroutine.wrap(IHRYX_fake_script)()
