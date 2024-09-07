@@ -59,7 +59,7 @@ Main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Main.BackgroundTransparency = 0.300
 Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Main.BorderSizePixel = 0
-Main.Position = UDim2.new(0.182586089, 0, 0.147946402, 0)
+Main.Position = UDim2.new(0.360762864, 0, 0.198613077, 0)
 Main.Size = UDim2.new(0, 450, 0, 225)
 
 UICorner.Parent = Main
@@ -204,7 +204,7 @@ ImageButton.Parent = Main
 ImageButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 ImageButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ImageButton.BorderSizePixel = 0
-ImageButton.Position = UDim2.new(1.13846326, 0, 0.31985262, 0)
+ImageButton.Position = UDim2.new(-0.230425611, 0, 1.07096374, 0)
 ImageButton.Size = UDim2.new(0, 40, 0, 40)
 ImageButton.Image = "http://www.roblox.com/asset/?id=92956430913574"
 
@@ -373,25 +373,25 @@ UICorner_17.Parent = Searchbutton
 
 -- Scripts:
 
-local function JWAU_fake_script() -- Executor.LocalScript 
+local function JHWOB_fake_script() -- Executor.LocalScript 
 	local script = Instance.new('LocalScript', Executor)
 
 	
 end
-coroutine.wrap(JWAU_fake_script)()
-local function NAPM_fake_script() -- home.LocalScript 
+coroutine.wrap(JHWOB_fake_script)()
+local function RRTSQ_fake_script() -- home.LocalScript 
 	local script = Instance.new('LocalScript', home)
 
 	
 end
-coroutine.wrap(NAPM_fake_script)()
-local function EVIUDA_fake_script() -- Settings.LocalScript 
+coroutine.wrap(RRTSQ_fake_script)()
+local function MKVISM_fake_script() -- Settings.LocalScript 
 	local script = Instance.new('LocalScript', Settings)
 
 	
 end
-coroutine.wrap(EVIUDA_fake_script)()
-local function AZUDI_fake_script() -- Clear.LocalScript 
+coroutine.wrap(MKVISM_fake_script)()
+local function WQTOGP_fake_script() -- Clear.LocalScript 
 	local script = Instance.new('LocalScript', Clear)
 
 	local TextBox = script.Parent.Parent
@@ -401,8 +401,8 @@ local function AZUDI_fake_script() -- Clear.LocalScript
 	end)
 	
 end
-coroutine.wrap(AZUDI_fake_script)()
-local function VDDJ_fake_script() -- Execute.LocalScript 
+coroutine.wrap(WQTOGP_fake_script)()
+local function IOVAXO_fake_script() -- Execute.LocalScript 
 	local script = Instance.new('LocalScript', Execute)
 
 	local TextBox = script.Parent.Parent
@@ -420,8 +420,8 @@ local function VDDJ_fake_script() -- Execute.LocalScript
 	end)
 	
 end
-coroutine.wrap(VDDJ_fake_script)()
-local function ZCGCB_fake_script() -- Paste.LocalScript 
+coroutine.wrap(IOVAXO_fake_script)()
+local function YYDBRK_fake_script() -- Paste.LocalScript 
 	local script = Instance.new('LocalScript', Paste)
 
 	local textBox = script.Parent.Parent
@@ -436,14 +436,14 @@ local function ZCGCB_fake_script() -- Paste.LocalScript
 	textBox.Text = getClipboardContent()
 	
 end
-coroutine.wrap(ZCGCB_fake_script)()
-local function MGGZGHV_fake_script() -- ImageButton.LocalScript 
+coroutine.wrap(YYDBRK_fake_script)()
+local function ZSAOV_fake_script() -- ImageButton.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton)
 
 	
 end
-coroutine.wrap(MGGZGHV_fake_script)()
-local function BVLYL_fake_script() -- ImageLabel_3.LocalScript 
+coroutine.wrap(ZSAOV_fake_script)()
+local function YEFPZI_fake_script() -- ImageLabel_3.LocalScript 
 	local script = Instance.new('LocalScript', ImageLabel_3)
 
 	local Players = game:GetService("Players")
@@ -452,8 +452,8 @@ local function BVLYL_fake_script() -- ImageLabel_3.LocalScript
 	local content = Players:GetUserThumbnailAsync(Player.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size150x150)
 	script.Parent.Image = content
 end
-coroutine.wrap(BVLYL_fake_script)()
-local function WYRK_fake_script() -- TextLabel_2.LocalScript 
+coroutine.wrap(YEFPZI_fake_script)()
+local function PRXVJ_fake_script() -- TextLabel_2.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_2)
 
 	local textLabel = script.Parent
@@ -463,8 +463,8 @@ local function WYRK_fake_script() -- TextLabel_2.LocalScript
 	textLabel.TextWrapped = true
 	
 end
-coroutine.wrap(WYRK_fake_script)()
-local function EUSVB_fake_script() -- Time.LocalScript 
+coroutine.wrap(PRXVJ_fake_script)()
+local function QGKIU_fake_script() -- Time.LocalScript 
 	local script = Instance.new('LocalScript', Time)
 
 	
@@ -482,8 +482,8 @@ local function EUSVB_fake_script() -- Time.LocalScript
 	updateTime()
 	
 end
-coroutine.wrap(EUSVB_fake_script)()
-local function UAIBTVC_fake_script() -- ScrollingFrame.LocalScript 
+coroutine.wrap(QGKIU_fake_script)()
+local function QQICMG_fake_script() -- ScrollingFrame.LocalScript 
 	local script = Instance.new('LocalScript', ScrollingFrame)
 
 	-- Reference to the scrolling frame
@@ -523,8 +523,8 @@ local function UAIBTVC_fake_script() -- ScrollingFrame.LocalScript
 	createScriptButton.Event:Connect(createScriptButtonFunc)
 	
 end
-coroutine.wrap(UAIBTVC_fake_script)()
-local function SXVKVN_fake_script() -- Searchbutton.LocalScript 
+coroutine.wrap(QQICMG_fake_script)()
+local function TBYMMFV_fake_script() -- Searchbutton.LocalScript 
 	local script = Instance.new('LocalScript', Searchbutton)
 
 	local HttpService = game:GetService("HttpService")
@@ -597,4 +597,4 @@ local function SXVKVN_fake_script() -- Searchbutton.LocalScript
 	end)
 	
 end
-coroutine.wrap(SXVKVN_fake_script)()
+coroutine.wrap(TBYMMFV_fake_script)()
