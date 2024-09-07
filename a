@@ -358,36 +358,31 @@ UICorner_16.Parent = ScrollingFrame
 
 -- Scripts:
 
-local function JWLSFZ_fake_script() -- Executor.LocalScript 
+local function EGHPMC_fake_script() -- Executor.LocalScript 
 	local script = Instance.new('LocalScript', Executor)
 
 	
 end
-coroutine.wrap(JWLSFZ_fake_script)()
-local function NNGY_fake_script() -- home.LocalScript 
+coroutine.wrap(EGHPMC_fake_script)()
+local function EUAZNK_fake_script() -- home.LocalScript 
 	local script = Instance.new('LocalScript', home)
 
 	
 end
-coroutine.wrap(NNGY_fake_script)()
-local function UCFCLG_fake_script() -- Settings.LocalScript 
+coroutine.wrap(EUAZNK_fake_script)()
+local function CWVO_fake_script() -- Settings.LocalScript 
 	local script = Instance.new('LocalScript', Settings)
 
 	
 end
-coroutine.wrap(UCFCLG_fake_script)()
-local function JLROU_fake_script() -- Clear.LocalScript 
+coroutine.wrap(CWVO_fake_script)()
+local function XXLK_fake_script() -- Clear.LocalScript 
 	local script = Instance.new('LocalScript', Clear)
 
-	local TextBox = script.Parent.Parent
-	local ClearButton = script.Parent
-	ClearButton.MouseButton1Click:Connect(function()
-		TextBox.Text = ""
-	end)
 	
 end
-coroutine.wrap(JLROU_fake_script)()
-local function LYNS_fake_script() -- Execute.LocalScript 
+coroutine.wrap(XXLK_fake_script)()
+local function ITUSV_fake_script() -- Execute.LocalScript 
 	local script = Instance.new('LocalScript', Execute)
 
 	local TextBox = script.Parent.Parent
@@ -405,30 +400,20 @@ local function LYNS_fake_script() -- Execute.LocalScript
 	end)
 	
 end
-coroutine.wrap(LYNS_fake_script)()
-local function LBYV_fake_script() -- Paste.LocalScript 
+coroutine.wrap(ITUSV_fake_script)()
+local function UPGG_fake_script() -- Paste.LocalScript 
 	local script = Instance.new('LocalScript', Paste)
 
-	local textBox = script.Parent.Parent
-	
-	
-	local function getClipboardContent()
-		local ClipboardService = game:GetService("ClipboardService")
-		return ClipboardService:GetClipboard()
-	end
-	
-	
-	textBox.Text = getClipboardContent()
 	
 end
-coroutine.wrap(LBYV_fake_script)()
-local function OBFWX_fake_script() -- ImageButton.LocalScript 
+coroutine.wrap(UPGG_fake_script)()
+local function BOBFUJ_fake_script() -- ImageButton.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton)
 
 	
 end
-coroutine.wrap(OBFWX_fake_script)()
-local function YYUQD_fake_script() -- ImageLabel_3.LocalScript 
+coroutine.wrap(BOBFUJ_fake_script)()
+local function GCWYJM_fake_script() -- ImageLabel_3.LocalScript 
 	local script = Instance.new('LocalScript', ImageLabel_3)
 
 	local Players = game:GetService("Players")
@@ -437,8 +422,8 @@ local function YYUQD_fake_script() -- ImageLabel_3.LocalScript
 	local content = Players:GetUserThumbnailAsync(Player.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size150x150)
 	script.Parent.Image = content
 end
-coroutine.wrap(YYUQD_fake_script)()
-local function XOAEO_fake_script() -- TextLabel_2.LocalScript 
+coroutine.wrap(GCWYJM_fake_script)()
+local function NMVB_fake_script() -- TextLabel_2.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_2)
 
 	local textLabel = script.Parent
@@ -448,8 +433,8 @@ local function XOAEO_fake_script() -- TextLabel_2.LocalScript
 	textLabel.TextWrapped = true
 	
 end
-coroutine.wrap(XOAEO_fake_script)()
-local function JALP_fake_script() -- Time.LocalScript 
+coroutine.wrap(NMVB_fake_script)()
+local function EXRIG_fake_script() -- Time.LocalScript 
 	local script = Instance.new('LocalScript', Time)
 
 	
@@ -467,8 +452,8 @@ local function JALP_fake_script() -- Time.LocalScript
 	updateTime()
 	
 end
-coroutine.wrap(JALP_fake_script)()
-local function ESIP_fake_script() -- Main.LocalScript 
+coroutine.wrap(EXRIG_fake_script)()
+local function IMPBSF_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 
 	local frame = script.Parent
@@ -495,8 +480,8 @@ local function ESIP_fake_script() -- Main.LocalScript
 	frame.InputBegan:Connect(onDragStart)
 	
 end
-coroutine.wrap(ESIP_fake_script)()
-local function WCGS_fake_script() -- Search.LocalScript 
+coroutine.wrap(IMPBSF_fake_script)()
+local function NXXJRIF_fake_script() -- Search.LocalScript 
 	local script = Instance.new('LocalScript', Search)
 
 	local HttpService = game:GetService("HttpService")
@@ -582,4 +567,4 @@ local function WCGS_fake_script() -- Search.LocalScript
 	searchBox:GetPropertyChangedSignal("Text"):Connect(updateResults)
 	
 end
-coroutine.wrap(WCGS_fake_script)()
+coroutine.wrap(NXXJRIF_fake_script)()
