@@ -376,31 +376,31 @@ UICorner_16.Parent = TextButton
 
 -- Scripts:
 
-local function XXKGGAC_fake_script() -- Executor.LocalScript 
+local function JYKAIC_fake_script() -- Executor.LocalScript 
 	local script = Instance.new('LocalScript', Executor)
 
 	
 end
-coroutine.wrap(XXKGGAC_fake_script)()
-local function MZMRCN_fake_script() -- home.LocalScript 
+coroutine.wrap(JYKAIC_fake_script)()
+local function EDXR_fake_script() -- home.LocalScript 
 	local script = Instance.new('LocalScript', home)
 
 	
 end
-coroutine.wrap(MZMRCN_fake_script)()
-local function YXMN_fake_script() -- Settings.LocalScript 
+coroutine.wrap(EDXR_fake_script)()
+local function LNFXA_fake_script() -- Settings.LocalScript 
 	local script = Instance.new('LocalScript', Settings)
 
 	
 end
-coroutine.wrap(YXMN_fake_script)()
-local function NMLGIKB_fake_script() -- Clear.LocalScript 
+coroutine.wrap(LNFXA_fake_script)()
+local function JNSMSP_fake_script() -- Clear.LocalScript 
 	local script = Instance.new('LocalScript', Clear)
 
 	
 end
-coroutine.wrap(NMLGIKB_fake_script)()
-local function SWTTLN_fake_script() -- Execute.LocalScript 
+coroutine.wrap(JNSMSP_fake_script)()
+local function RPHWV_fake_script() -- Execute.LocalScript 
 	local script = Instance.new('LocalScript', Execute)
 
 	local TextBox = script.Parent.Parent
@@ -418,20 +418,20 @@ local function SWTTLN_fake_script() -- Execute.LocalScript
 	end)
 	
 end
-coroutine.wrap(SWTTLN_fake_script)()
-local function JSHKGYN_fake_script() -- Paste.LocalScript 
+coroutine.wrap(RPHWV_fake_script)()
+local function VVTO_fake_script() -- Paste.LocalScript 
 	local script = Instance.new('LocalScript', Paste)
 
 	
 end
-coroutine.wrap(JSHKGYN_fake_script)()
-local function XXGOUP_fake_script() -- ImageButton.LocalScript 
+coroutine.wrap(VVTO_fake_script)()
+local function SEHQEW_fake_script() -- ImageButton.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton)
 
 	
 end
-coroutine.wrap(XXGOUP_fake_script)()
-local function DKSMTM_fake_script() -- ImageLabel_3.LocalScript 
+coroutine.wrap(SEHQEW_fake_script)()
+local function RDWC_fake_script() -- ImageLabel_3.LocalScript 
 	local script = Instance.new('LocalScript', ImageLabel_3)
 
 	local Players = game:GetService("Players")
@@ -440,8 +440,8 @@ local function DKSMTM_fake_script() -- ImageLabel_3.LocalScript
 	local content = Players:GetUserThumbnailAsync(Player.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size150x150)
 	script.Parent.Image = content
 end
-coroutine.wrap(DKSMTM_fake_script)()
-local function QVYS_fake_script() -- TextLabel_2.LocalScript 
+coroutine.wrap(RDWC_fake_script)()
+local function TCDK_fake_script() -- TextLabel_2.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_2)
 
 	local textLabel = script.Parent
@@ -451,8 +451,8 @@ local function QVYS_fake_script() -- TextLabel_2.LocalScript
 	textLabel.TextWrapped = true
 	
 end
-coroutine.wrap(QVYS_fake_script)()
-local function SYPN_fake_script() -- Time.LocalScript 
+coroutine.wrap(TCDK_fake_script)()
+local function WTWELO_fake_script() -- Time.LocalScript 
 	local script = Instance.new('LocalScript', Time)
 
 	
@@ -470,14 +470,14 @@ local function SYPN_fake_script() -- Time.LocalScript
 	updateTime()
 	
 end
-coroutine.wrap(SYPN_fake_script)()
-local function WXDVLY_fake_script() -- Main.LocalScript 
+coroutine.wrap(WTWELO_fake_script)()
+local function MATKWF_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 
 	-- a
 end
-coroutine.wrap(WXDVLY_fake_script)()
-local function BKAOLYD_fake_script() -- Search.LocalScript 
+coroutine.wrap(MATKWF_fake_script)()
+local function PPLP_fake_script() -- Search.LocalScript 
 	local script = Instance.new('LocalScript', Search)
 
 	local HttpService = game:GetService("HttpService")
@@ -485,20 +485,34 @@ local function BKAOLYD_fake_script() -- Search.LocalScript
 	local searchBox = script.Parent
 	local searchButton = searchBox:FindFirstChild("TextButton")
 	local resultsFrame = searchBox:FindFirstChild("ScrollingFrame")
+	
 	-- Function to create script display buttons
 	local function createScriptButton(script, index)
-	
 		local button = Instance.new("TextButton")
 		local UICorner = Instance.new("UICorner")
+		local UIListLayout = resultsFrame:FindFirstChild("UIListLayout") or Instance.new("UIListLayout")
+	
 		button.Parent = resultsFrame
 		button.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
 		button.BorderSizePixel = 0
-		button.Position = UDim2.new(0.171111107, 0, 0.528888822, 0)
-		button.Size = UDim2.new(0, 193, 0, 35)
+		button.Position = UDim2.new(0, 0, 0, (index - 1) * 45)
+		button.Size = UDim2.new(1, -10, 0, 40)  -- Adjust size and padding
 		button.TextColor3 = Color3.fromRGB(255, 255, 255)
 		button.TextSize = 14
-		button.Text = script.title or "no name boi ahh"
+		button.Text = script.title or "No title available"
+		button.TextScaled = true
+		button.TextWrapped = true
+	
 		UICorner.Parent = button
+	
+		-- Ensure UIListLayout is added for proper spacing
+		if not resultsFrame:FindFirstChild("UIListLayout") then
+			UIListLayout.Parent = resultsFrame
+			UIListLayout.FillDirection = Enum.FillDirection.Vertical
+			UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+			UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+			UIListLayout.Padding = UDim.new(0, 5)
+		end
 	
 		-- Execute script on button click
 		button.MouseButton1Click:Connect(function()
@@ -560,4 +574,4 @@ local function BKAOLYD_fake_script() -- Search.LocalScript
 	end)
 	
 end
-coroutine.wrap(BKAOLYD_fake_script)()
+coroutine.wrap(PPLP_fake_script)()
