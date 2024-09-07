@@ -1,0 +1,600 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Side = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local Executor = Instance.new("ImageButton")
+local home = Instance.new("ImageButton")
+local Settings = Instance.new("ImageButton")
+local Top = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local ImageLabel = Instance.new("ImageLabel")
+local Code = Instance.new("TextBox")
+local Clear = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local Execute = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local UICorner_6 = Instance.new("UICorner")
+local Paste = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local ImageButton = Instance.new("ImageButton")
+local UICorner_8 = Instance.new("UICorner")
+local Home = Instance.new("Frame")
+local UICorner_9 = Instance.new("UICorner")
+local Frame = Instance.new("Frame")
+local UICorner_10 = Instance.new("UICorner")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local ImageLabel_3 = Instance.new("ImageLabel")
+local UICorner_11 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local Middle = Instance.new("Frame")
+local UICorner_12 = Instance.new("UICorner")
+local Time = Instance.new("TextLabel")
+local Settings_2 = Instance.new("Frame")
+local UICorner_13 = Instance.new("UICorner")
+local TextLabel_4 = Instance.new("TextLabel")
+local Search = Instance.new("TextBox")
+local UICorner_14 = Instance.new("UICorner")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local UICorner_15 = Instance.new("UICorner")
+local UICorner_16 = Instance.new("UICorner")
+local Searchbutton = Instance.new("TextButton")
+local UICorner_17 = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Main.BackgroundTransparency = 0.300
+Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.182586089, 0, 0.147946402, 0)
+Main.Size = UDim2.new(0, 450, 0, 225)
+
+UICorner.Parent = Main
+
+Side.Name = "Side"
+Side.Parent = Main
+Side.BackgroundColor3 = Color3.fromRGB(0, 39, 116)
+Side.BackgroundTransparency = 0.400
+Side.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Side.BorderSizePixel = 0
+Side.Position = UDim2.new(0.0195530877, 0, 0.227027044, 0)
+Side.Size = UDim2.new(0, 34, 0, 159)
+
+UICorner_2.Parent = Side
+
+Executor.Name = "Executor"
+Executor.Parent = Side
+Executor.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Executor.BackgroundTransparency = 1.000
+Executor.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Executor.BorderSizePixel = 0
+Executor.Position = UDim2.new(0.0882352963, 0, 0.432445407, 0)
+Executor.Size = UDim2.new(0, 24, 0, 21)
+Executor.Image = "http://www.roblox.com/asset/?id=13917098514"
+
+home.Name = "home"
+home.Parent = Side
+home.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+home.BackgroundTransparency = 1.000
+home.BorderColor3 = Color3.fromRGB(0, 0, 0)
+home.BorderSizePixel = 0
+home.Position = UDim2.new(0.14705883, 0, 0.0391047262, 0)
+home.Size = UDim2.new(0, 24, 0, 21)
+home.Image = "http://www.roblox.com/asset/?id=7539983773"
+
+Settings.Name = "Settings"
+Settings.Parent = Side
+Settings.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Settings.BackgroundTransparency = 1.000
+Settings.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Settings.BorderSizePixel = 0
+Settings.Position = UDim2.new(0.14705883, 0, 0.816093206, 0)
+Settings.Size = UDim2.new(0, 24, 0, 21)
+Settings.Image = "http://www.roblox.com/asset/?id=17257771808"
+
+Top.Name = "Top"
+Top.Parent = Main
+Top.BackgroundColor3 = Color3.fromRGB(0, 39, 116)
+Top.BackgroundTransparency = 0.400
+Top.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Top.BorderSizePixel = 0
+Top.Position = UDim2.new(0.0179018825, 0, 0.0423438847, 0)
+Top.Size = UDim2.new(0, 430, 0, 30)
+
+UICorner_3.Parent = Top
+
+TextLabel.Parent = Top
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.131578952, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 263, 0, 32)
+TextLabel.Font = Enum.Font.Fantasy
+TextLabel.Text = "Frost Ware Android"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 24.000
+TextLabel.TextWrapped = true
+
+ImageLabel.Parent = Top
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0.00877192989, 0, 0.0666666701, 0)
+ImageLabel.Size = UDim2.new(0, 31, 0, 30)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=92956430913574"
+
+Code.Name = "Code"
+Code.Parent = Main
+Code.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Code.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Code.BorderSizePixel = 0
+Code.Position = UDim2.new(0.127473548, 0, 0.254660964, 0)
+Code.Size = UDim2.new(0, 380, 0, 108)
+Code.Visible = false
+Code.Font = Enum.Font.SourceSans
+Code.PlaceholderColor3 = Color3.fromRGB(88, 88, 88)
+Code.PlaceholderText = "Print(\"FrostWare on top\")"
+Code.Text = ""
+Code.TextColor3 = Color3.fromRGB(255, 255, 255)
+Code.TextSize = 14.000
+Code.TextWrapped = true
+Code.TextXAlignment = Enum.TextXAlignment.Left
+Code.TextYAlignment = Enum.TextYAlignment.Top
+
+Clear.Name = "Clear"
+Clear.Parent = Code
+Clear.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Clear.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Clear.BorderSizePixel = 0
+Clear.Position = UDim2.new(0.710409224, 0, 1.14214814, 0)
+Clear.Size = UDim2.new(0, 98, 0, 28)
+Clear.Font = Enum.Font.SourceSans
+Clear.Text = "Clear"
+Clear.TextColor3 = Color3.fromRGB(255, 255, 255)
+Clear.TextSize = 14.000
+
+UICorner_4.Parent = Clear
+
+Execute.Name = "Execute"
+Execute.Parent = Code
+Execute.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Execute.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Execute.BorderSizePixel = 0
+Execute.Position = UDim2.new(-0.000760109222, 0, 1.14412105, 0)
+Execute.Size = UDim2.new(0, 98, 0, 28)
+Execute.Font = Enum.Font.SourceSans
+Execute.Text = "Execute"
+Execute.TextColor3 = Color3.fromRGB(255, 255, 255)
+Execute.TextSize = 14.000
+
+UICorner_5.Parent = Execute
+
+UICorner_6.Parent = Code
+
+Paste.Name = "Paste"
+Paste.Parent = Code
+Paste.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Paste.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Paste.BorderSizePixel = 0
+Paste.Position = UDim2.new(0.354503036, 0, 1.14412105, 0)
+Paste.Size = UDim2.new(0, 98, 0, 28)
+Paste.Font = Enum.Font.SourceSans
+Paste.Text = "Paste"
+Paste.TextColor3 = Color3.fromRGB(255, 255, 255)
+Paste.TextSize = 14.000
+
+UICorner_7.Parent = Paste
+
+ImageButton.Parent = Main
+ImageButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton.BorderSizePixel = 0
+ImageButton.Position = UDim2.new(1.13846326, 0, 0.31985262, 0)
+ImageButton.Size = UDim2.new(0, 40, 0, 40)
+ImageButton.Image = "http://www.roblox.com/asset/?id=92956430913574"
+
+UICorner_8.CornerRadius = UDim.new(1, 0)
+UICorner_8.Parent = ImageButton
+
+Home.Name = "Home"
+Home.Parent = Main
+Home.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Home.BackgroundTransparency = 0.600
+Home.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Home.BorderSizePixel = 0
+Home.Position = UDim2.new(0.113333337, 0, 0.25333333, 0)
+Home.Size = UDim2.new(0, 310, 0, 42)
+Home.Visible = false
+
+UICorner_9.Parent = Home
+
+Frame.Parent = Home
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BackgroundTransparency = 0.600
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(1.02853918, 0, -0.246666685, 0)
+Frame.Size = UDim2.new(0, 68, 0, 61)
+
+UICorner_10.Parent = Frame
+
+ImageLabel_2.Parent = Frame
+ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_2.BackgroundTransparency = 1.000
+ImageLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel_2.BorderSizePixel = 0
+ImageLabel_2.Position = UDim2.new(0.00309484149, 0, 0.00273257401, 0)
+ImageLabel_2.Size = UDim2.new(0, 68, 0, 65)
+ImageLabel_2.Image = "http://www.roblox.com/asset/?id=92956430913574"
+
+ImageLabel_3.Parent = Home
+ImageLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_3.BackgroundTransparency = 1.000
+ImageLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel_3.BorderSizePixel = 0
+ImageLabel_3.Position = UDim2.new(0.022580646, 0, 0.102350511, 0)
+ImageLabel_3.Size = UDim2.new(0, 44, 0, 36)
+ImageLabel_3.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+UICorner_11.CornerRadius = UDim.new(1, 0)
+UICorner_11.Parent = ImageLabel_3
+
+TextLabel_2.Parent = Home
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.562679052, 0, 0.142067686, 0)
+TextLabel_2.Size = UDim2.new(0, 126, 0, 31)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Username"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+TextLabel_3.Parent = TextLabel_2
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(-1.03095937, 0, 0.0299328212, 0)
+TextLabel_3.Size = UDim2.new(0, 126, 0, 31)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "Welcome"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 30.000
+TextLabel_3.TextWrapped = true
+
+Middle.Name = "Middle"
+Middle.Parent = Home
+Middle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Middle.BackgroundTransparency = 0.600
+Middle.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Middle.BorderSizePixel = 0
+Middle.Position = UDim2.new(-0.00279570557, 0, 1.18912983, 0)
+Middle.Size = UDim2.new(0, 167, 0, 38)
+
+UICorner_12.Parent = Middle
+
+Time.Name = "Time"
+Time.Parent = Middle
+Time.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Time.BackgroundTransparency = 1.000
+Time.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Time.BorderSizePixel = 0
+Time.Position = UDim2.new(0.0383012034, 0, -0.00272489851, 0)
+Time.Size = UDim2.new(0, 154, 0, 38)
+Time.Font = Enum.Font.SourceSans
+Time.Text = "Da time momkey"
+Time.TextColor3 = Color3.fromRGB(255, 255, 255)
+Time.TextSize = 30.000
+
+Settings_2.Name = "Settings"
+Settings_2.Parent = Main
+Settings_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Settings_2.BackgroundTransparency = 0.600
+Settings_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Settings_2.BorderSizePixel = 0
+Settings_2.Position = UDim2.new(0.120000035, 0, 0.253333449, 0)
+Settings_2.Size = UDim2.new(0, 384, 0, 62)
+Settings_2.Visible = false
+
+UICorner_13.Parent = Settings_2
+
+TextLabel_4.Parent = Settings_2
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(3.9736431e-08, 0, 0, 0)
+TextLabel_4.Size = UDim2.new(0, 377, 0, 62)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "NO SETTINGS YET BITCH"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+Search.Name = "Search"
+Search.Parent = Main
+Search.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Search.BackgroundTransparency = 0.400
+Search.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Search.BorderSizePixel = 0
+Search.Position = UDim2.new(0.142222226, 0, 0.213185966, 0)
+Search.Size = UDim2.new(0, 249, 0, 39)
+Search.Font = Enum.Font.SourceSans
+Search.Text = ""
+Search.TextColor3 = Color3.fromRGB(255, 255, 255)
+Search.TextSize = 14.000
+
+UICorner_14.Parent = Search
+
+ScrollingFrame.Parent = Search
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0.00143788045, 0, 1.34120536, 0)
+ScrollingFrame.Size = UDim2.new(0, 359, 0, 109)
+
+UICorner_15.Parent = ScrollingFrame
+
+UICorner_16.Parent = ScrollingFrame
+
+Searchbutton.Name = "Searchbutton"
+Searchbutton.Parent = Search
+Searchbutton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Searchbutton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Searchbutton.BorderSizePixel = 0
+Searchbutton.Position = UDim2.new(1.09259403, 0, 0.102564104, 0)
+Searchbutton.Size = UDim2.new(0, 86, 0, 30)
+Searchbutton.Font = Enum.Font.SourceSans
+Searchbutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+Searchbutton.TextSize = 14.000
+
+UICorner_17.Parent = Searchbutton
+
+-- Scripts:
+
+local function JWAU_fake_script() -- Executor.LocalScript 
+	local script = Instance.new('LocalScript', Executor)
+
+	
+end
+coroutine.wrap(JWAU_fake_script)()
+local function NAPM_fake_script() -- home.LocalScript 
+	local script = Instance.new('LocalScript', home)
+
+	
+end
+coroutine.wrap(NAPM_fake_script)()
+local function EVIUDA_fake_script() -- Settings.LocalScript 
+	local script = Instance.new('LocalScript', Settings)
+
+	
+end
+coroutine.wrap(EVIUDA_fake_script)()
+local function AZUDI_fake_script() -- Clear.LocalScript 
+	local script = Instance.new('LocalScript', Clear)
+
+	local TextBox = script.Parent.Parent
+	local ClearButton = script.Parent
+	ClearButton.MouseButton1Click:Connect(function()
+		TextBox.Text = ""
+	end)
+	
+end
+coroutine.wrap(AZUDI_fake_script)()
+local function VDDJ_fake_script() -- Execute.LocalScript 
+	local script = Instance.new('LocalScript', Execute)
+
+	local TextBox = script.Parent.Parent
+	
+	local ExecuteButton = script.Parent
+	ExecuteButton.MouseButton1Click:Connect(function()
+		local luaCode = TextBox.Text
+		local success, err = pcall(function()
+			loadstring(luaCode)()
+		end)
+	
+		if not success then
+			warn("Your gay you gay boy your so fat the code wouldnt run" .. err)
+		end
+	end)
+	
+end
+coroutine.wrap(VDDJ_fake_script)()
+local function ZCGCB_fake_script() -- Paste.LocalScript 
+	local script = Instance.new('LocalScript', Paste)
+
+	local textBox = script.Parent.Parent
+	
+	
+	local function getClipboardContent()
+		local ClipboardService = game:GetService("ClipboardService")
+		return ClipboardService:GetClipboard()
+	end
+	
+	
+	textBox.Text = getClipboardContent()
+	
+end
+coroutine.wrap(ZCGCB_fake_script)()
+local function MGGZGHV_fake_script() -- ImageButton.LocalScript 
+	local script = Instance.new('LocalScript', ImageButton)
+
+	
+end
+coroutine.wrap(MGGZGHV_fake_script)()
+local function BVLYL_fake_script() -- ImageLabel_3.LocalScript 
+	local script = Instance.new('LocalScript', ImageLabel_3)
+
+	local Players = game:GetService("Players")
+	local Player = game.Players.LocalPlayer
+	
+	local content = Players:GetUserThumbnailAsync(Player.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size150x150)
+	script.Parent.Image = content
+end
+coroutine.wrap(BVLYL_fake_script)()
+local function WYRK_fake_script() -- TextLabel_2.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_2)
+
+	local textLabel = script.Parent
+	textLabel.Text = game:GetService("Players").LocalPlayer.Name
+	
+	textLabel.TextScaled = true
+	textLabel.TextWrapped = true
+	
+end
+coroutine.wrap(WYRK_fake_script)()
+local function EUSVB_fake_script() -- Time.LocalScript 
+	local script = Instance.new('LocalScript', Time)
+
+	
+	local textLabel = script.Parent
+	
+	
+	local function updateTime()
+		while true do
+			local currentTime = os.date("%I:%M:%S %p")
+			textLabel.Text = "" .. currentTime
+			wait(1) 
+		end
+	end
+	
+	updateTime()
+	
+end
+coroutine.wrap(EUSVB_fake_script)()
+local function UAIBTVC_fake_script() -- ScrollingFrame.LocalScript 
+	local script = Instance.new('LocalScript', ScrollingFrame)
+
+	-- Reference to the scrolling frame
+	local resultsFrame = script.Parent
+	
+	-- Create a RemoteEvent to listen for button creation requests
+	local createScriptButton = Instance.new("BindableEvent", resultsFrame)
+	createScriptButton.Name = "CreateScriptButton"
+	
+	-- Function to create script display buttons inside the scrolling frame
+	local function createScriptButtonFunc(script, index)
+		local button = Instance.new("TextButton")
+		button.Size = UDim2.new(1, -10, 0, 50)  -- Customize size as needed
+		button.Position = UDim2.new(0, 5, 0, (index - 1) * 55)  -- Customize positioning as needed
+		button.Text = script.title or "Untitled"
+		button.TextSize = 14
+		button.TextColor3 = Color3.fromRGB(255, 255, 255)
+		button.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+		button.BorderSizePixel = 0
+		button.Parent = resultsFrame
+	
+		-- Execute script on button click
+		button.MouseButton1Click:Connect(function()
+			local scriptContent = script.script or ""
+			if scriptContent ~= "" then
+				local success, err = pcall(function()
+					loadstring(scriptContent)()
+				end)
+				if not success then
+					warn("Failed to execute script: " .. err)
+				end
+			end
+		end)
+	end
+	
+	-- Connect the RemoteEvent to create the button
+	createScriptButton.Event:Connect(createScriptButtonFunc)
+	
+end
+coroutine.wrap(UAIBTVC_fake_script)()
+local function SXVKVN_fake_script() -- Searchbutton.LocalScript 
+	local script = Instance.new('LocalScript', Searchbutton)
+
+	local HttpService = game:GetService("HttpService")
+	local searchButton = script.Parent
+	local resultsFrame = script.Parent.Parent:FindFirstChild("ScrollingFrame")
+	local searchBox = script.Parent.Parent
+	
+	-- Debugging: Check if the elements are correctly referenced
+	print("searchBox:", searchBox)
+	print("searchButton:", searchButton)
+	print("resultsFrame:", resultsFrame)
+	
+	if not searchBox or not searchButton or not resultsFrame then
+		error("One of the UI elements (TextBox, TextButton, or ScrollingFrame) is not found. Please check the hierarchy.")
+	end
+	
+	-- Function to fetch scripts from the API
+	local function fetchScripts(query)
+		local url = "https://scriptblox.com/api/script/search?filters=free&q=" .. query
+		local success, response = pcall(function()
+			return game:HttpGet(url)
+		end)
+	
+		if not success then
+			warn("Failed to fetch scripts: " .. response)
+			return {}
+		end
+	
+		local success, data = pcall(function()
+			return HttpService:JSONDecode(response)
+		end)
+	
+		if not success then
+			warn("Failed to decode JSON: " .. data)
+			return {}
+		end
+	
+		return data.result.scripts or {}
+	end
+	
+	-- Function to clear previous search results
+	local function clearResults()
+		for _, child in ipairs(resultsFrame:GetChildren()) do
+			if child:IsA("TextButton") then
+				child:Destroy()
+			end
+		end
+	end
+	
+	-- Search button click event
+	searchButton.MouseButton1Click:Connect(function()
+		local query = searchBox and searchBox.Text or ""
+		print("Search Query:", query)  -- Debugging
+		if query ~= "" then
+			clearResults()
+			local scripts = fetchScripts(query)
+			for i, scriptData in ipairs(scripts) do
+				local button = Instance.new("TextButton")
+				button.Size = UDim2.new(1, 0, 0, 50)
+				button.Position = UDim2.new(0, 0, 0, i * 50)
+				button.Text = scriptData.name  -- Display the script's name
+				button.Parent = resultsFrame
+	
+				-- Execute the script on button click
+				button.MouseButton1Click:Connect(function()
+					loadstring(scriptData.script)()
+				end)
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(SXVKVN_fake_script)()
