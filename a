@@ -40,13 +40,6 @@ local Time = Instance.new("TextLabel")
 local Settings_2 = Instance.new("Frame")
 local UICorner_13 = Instance.new("UICorner")
 local TextLabel_4 = Instance.new("TextLabel")
-local Search = Instance.new("TextBox")
-local UICorner_14 = Instance.new("UICorner")
-local ScrollingFrame = Instance.new("ScrollingFrame")
-local UICorner_15 = Instance.new("UICorner")
-local UICorner_16 = Instance.new("UICorner")
-local Searchbutton = Instance.new("TextButton")
-local UICorner_17 = Instance.new("UICorner")
 
 --Properties:
 
@@ -331,67 +324,27 @@ TextLabel_4.TextScaled = true
 TextLabel_4.TextSize = 14.000
 TextLabel_4.TextWrapped = true
 
-Search.Name = "Search"
-Search.Parent = Main
-Search.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Search.BackgroundTransparency = 0.400
-Search.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Search.BorderSizePixel = 0
-Search.Position = UDim2.new(0.142222226, 0, 0.213185966, 0)
-Search.Size = UDim2.new(0, 249, 0, 39)
-Search.Font = Enum.Font.SourceSans
-Search.Text = ""
-Search.TextColor3 = Color3.fromRGB(255, 255, 255)
-Search.TextSize = 14.000
-
-UICorner_14.Parent = Search
-
-ScrollingFrame.Parent = Search
-ScrollingFrame.Active = true
-ScrollingFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ScrollingFrame.BorderSizePixel = 0
-ScrollingFrame.Position = UDim2.new(0.00143788045, 0, 1.34120536, 0)
-ScrollingFrame.Size = UDim2.new(0, 359, 0, 109)
-
-UICorner_15.Parent = ScrollingFrame
-
-UICorner_16.Parent = ScrollingFrame
-
-Searchbutton.Name = "Searchbutton"
-Searchbutton.Parent = Search
-Searchbutton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Searchbutton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Searchbutton.BorderSizePixel = 0
-Searchbutton.Position = UDim2.new(1.09259403, 0, 0.102564104, 0)
-Searchbutton.Size = UDim2.new(0, 86, 0, 30)
-Searchbutton.Font = Enum.Font.SourceSans
-Searchbutton.TextColor3 = Color3.fromRGB(255, 255, 255)
-Searchbutton.TextSize = 14.000
-
-UICorner_17.Parent = Searchbutton
-
 -- Scripts:
 
-local function YHEAIS_fake_script() -- Executor.LocalScript 
+local function WJXZQ_fake_script() -- Executor.LocalScript 
 	local script = Instance.new('LocalScript', Executor)
 
 	
 end
-coroutine.wrap(YHEAIS_fake_script)()
-local function FNXQOU_fake_script() -- home.LocalScript 
+coroutine.wrap(WJXZQ_fake_script)()
+local function MNTLFJ_fake_script() -- home.LocalScript 
 	local script = Instance.new('LocalScript', home)
 
 	
 end
-coroutine.wrap(FNXQOU_fake_script)()
-local function OQJXPC_fake_script() -- Settings.LocalScript 
+coroutine.wrap(MNTLFJ_fake_script)()
+local function LGTH_fake_script() -- Settings.LocalScript 
 	local script = Instance.new('LocalScript', Settings)
 
 	
 end
-coroutine.wrap(OQJXPC_fake_script)()
-local function SKUI_fake_script() -- Clear.LocalScript 
+coroutine.wrap(LGTH_fake_script)()
+local function GIUUGA_fake_script() -- Clear.LocalScript 
 	local script = Instance.new('LocalScript', Clear)
 
 	local TextBox = script.Parent.Parent
@@ -401,8 +354,8 @@ local function SKUI_fake_script() -- Clear.LocalScript
 	end)
 	
 end
-coroutine.wrap(SKUI_fake_script)()
-local function DJYQNJ_fake_script() -- Execute.LocalScript 
+coroutine.wrap(GIUUGA_fake_script)()
+local function AUEO_fake_script() -- Execute.LocalScript 
 	local script = Instance.new('LocalScript', Execute)
 
 	local TextBox = script.Parent.Parent
@@ -420,8 +373,8 @@ local function DJYQNJ_fake_script() -- Execute.LocalScript
 	end)
 	
 end
-coroutine.wrap(DJYQNJ_fake_script)()
-local function YWLRMXV_fake_script() -- Paste.LocalScript 
+coroutine.wrap(AUEO_fake_script)()
+local function DVRORJA_fake_script() -- Paste.LocalScript 
 	local script = Instance.new('LocalScript', Paste)
 
 	local textBox = script.Parent.Parent
@@ -436,14 +389,14 @@ local function YWLRMXV_fake_script() -- Paste.LocalScript
 	textBox.Text = getClipboardContent()
 	
 end
-coroutine.wrap(YWLRMXV_fake_script)()
-local function JDSAB_fake_script() -- ImageButton.LocalScript 
+coroutine.wrap(DVRORJA_fake_script)()
+local function JSYRUP_fake_script() -- ImageButton.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton)
 
 	
 end
-coroutine.wrap(JDSAB_fake_script)()
-local function KSCNG_fake_script() -- ImageLabel_3.LocalScript 
+coroutine.wrap(JSYRUP_fake_script)()
+local function VMSKUBQ_fake_script() -- ImageLabel_3.LocalScript 
 	local script = Instance.new('LocalScript', ImageLabel_3)
 
 	local Players = game:GetService("Players")
@@ -452,8 +405,8 @@ local function KSCNG_fake_script() -- ImageLabel_3.LocalScript
 	local content = Players:GetUserThumbnailAsync(Player.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size150x150)
 	script.Parent.Image = content
 end
-coroutine.wrap(KSCNG_fake_script)()
-local function DGVYS_fake_script() -- TextLabel_2.LocalScript 
+coroutine.wrap(VMSKUBQ_fake_script)()
+local function FKYPBC_fake_script() -- TextLabel_2.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_2)
 
 	local textLabel = script.Parent
@@ -463,8 +416,8 @@ local function DGVYS_fake_script() -- TextLabel_2.LocalScript
 	textLabel.TextWrapped = true
 	
 end
-coroutine.wrap(DGVYS_fake_script)()
-local function MUWSHPQ_fake_script() -- Time.LocalScript 
+coroutine.wrap(FKYPBC_fake_script)()
+local function YNXKP_fake_script() -- Time.LocalScript 
 	local script = Instance.new('LocalScript', Time)
 
 	
@@ -482,131 +435,11 @@ local function MUWSHPQ_fake_script() -- Time.LocalScript
 	updateTime()
 	
 end
-coroutine.wrap(MUWSHPQ_fake_script)()
-local function OBAHS_fake_script() -- ScrollingFrame.LocalScript 
-	local script = Instance.new('LocalScript', ScrollingFrame)
-
-	-- Reference to the scrolling frame
-	local resultsFrame = script.Parent
-	
-	-- Create a RemoteEvent to listen for button creation requests
-	local createScriptButton = Instance.new("BindableEvent", resultsFrame)
-	createScriptButton.Name = "CreateScriptButton"
-	
-	-- Function to create script display buttons inside the scrolling frame
-	local function createScriptButtonFunc(script, index)
-		local button = Instance.new("TextButton")
-		button.Size = UDim2.new(1, -10, 0, 50)  -- Customize size as needed
-		button.Position = UDim2.new(0, 5, 0, (index - 1) * 55)  -- Customize positioning as needed
-		button.Text = script.title or "Untitled"
-		button.TextSize = 14
-		button.TextColor3 = Color3.fromRGB(255, 255, 255)
-		button.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
-		button.BorderSizePixel = 0
-		button.Parent = resultsFrame
-	
-		-- Execute script on button click
-		button.MouseButton1Click:Connect(function()
-			local scriptContent = script.script or ""
-			if scriptContent ~= "" then
-				local success, err = pcall(function()
-					loadstring(scriptContent)()
-				end)
-				if not success then
-					warn("Failed to execute script: " .. err)
-				end
-			end
-		end)
-	end
-	
-	-- Connect the RemoteEvent to create the button
-	createScriptButton.Event:Connect(createScriptButtonFunc)
-	
-end
-coroutine.wrap(OBAHS_fake_script)()
-local function AAGLJA_fake_script() -- Searchbutton.LocalScript 
-	local script = Instance.new('LocalScript', Searchbutton)
-
-	local HttpService = game:GetService("HttpService")
-	local searchButton = script.Parent
-	local resultsFrame = script.Parent.Parent:FindFirstChild("ScrollingFrame")
-	local searchBox = script.Parent.Parent  -- Assumes the TextBox is named "Search"
-	
-	-- Debugging: Check if the elements are correctly referenced
-	print("searchBox:", searchBox)
-	print("searchButton:", searchButton)
-	print("resultsFrame:", resultsFrame)
-	
-	if not searchBox or not searchButton or not resultsFrame then
-		error("One of the UI elements (TextBox, TextButton, or ScrollingFrame) is not found. Please check the hierarchy.")
-	end
-	
-	-- Function to fetch scripts from the API
-	local function fetchScripts(query)
-		local url = "https://scriptblox.com/api/script/search?filters=free&q=" .. query
-		local success, response = pcall(function()
-			return game:HttpGet(url)
-		end)
-	
-		if not success then
-			warn("Failed to fetch scripts: " .. response)
-			return {}
-		end
-	
-		local success, data = pcall(function()
-			return HttpService:JSONDecode(response)
-		end)
-	
-		if not success then
-			warn("Failed to decode JSON: " .. data)
-			return {}
-		end
-	
-		return data.result.scripts or {}
-	end
-	
-	-- Function to clear previous search results
-	local function clearResults()
-		for _, child in ipairs(resultsFrame:GetChildren()) do
-			if child:IsA("TextButton") then
-				child:Destroy()
-			end
-		end
-	end
-	
-	-- Search button click event
-	searchButton.MouseButton1Click:Connect(function()
-		local query = searchBox and searchBox.Text or ""
-		print("Search Query:", query)  -- Debugging
-		if query ~= "" then
-			clearResults()
-			local scripts = fetchScripts(query)
-			for i, scriptData in ipairs(scripts) do
-				local button = Instance.new("TextButton")
-				button.Size = UDim2.new(1, 0, 0, 50)
-				button.Position = UDim2.new(0, 0, 0, i * 50)
-				button.Text = scriptData.name  -- Display the script's name
-				button.Parent = resultsFrame
-	
-				-- Execute the script on button click
-				button.MouseButton1Click:Connect(function()
-					local success, err = pcall(function()
-						loadstring(scriptData.script)()
-					end)
-					if not success then
-						warn("Failed to execute script: " .. err)
-					end
-				end)
-			end
-		end
-	end)
-	
-end
-coroutine.wrap(AAGLJA_fake_script)()
-local function FUDY_fake_script() -- Main.LocalScript 
+coroutine.wrap(YNXKP_fake_script)()
+local function ISXSLF_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 
-	local frame = script.Parent -- Replace with your frame reference
+	local frame = script.Parent
 	
 	local function onDragStart(input)
 		if input.UserInputType == Enum.UserInputType.MouseButton1 then
@@ -630,4 +463,187 @@ local function FUDY_fake_script() -- Main.LocalScript
 	frame.InputBegan:Connect(onDragStart)
 	
 end
-coroutine.wrap(FUDY_fake_script)()
+coroutine.wrap(ISXSLF_fake_script)()
+local function YVRQA_fake_script() -- Main.gui2lua #4 
+	local script = Instance.new('LocalScript', Main)
+
+	-- Gui to Lua
+	-- Version: 3.2
+	
+	-- Instances:
+	
+	local Search = Instance.new("TextBox")
+	local UICorner = Instance.new("UICorner")
+	local ScrollingFrame = Instance.new("ScrollingFrame")
+	local UICorner_2 = Instance.new("UICorner")
+	local UICorner_3 = Instance.new("UICorner")
+	local Searchbutton = Instance.new("TextButton")
+	local UICorner_4 = Instance.new("UICorner")
+	
+	-- Properties:
+	
+	Search.Name = "Search"
+	Search.Parent = game.StarterGui.ScreenGui.Main
+	Search.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Search.BackgroundTransparency = 0.400
+	Search.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Search.BorderSizePixel = 0
+	Search.Position = UDim2.new(0.142222226, 0, 0.213185966, 0)
+	Search.Size = UDim2.new(0, 249, 0, 39)
+	Search.Font = Enum.Font.SourceSans
+	Search.Text = ""
+	Search.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Search.TextSize = 14.000
+	
+	UICorner.Parent = Search
+	
+	ScrollingFrame.Parent = Search
+	ScrollingFrame.Active = true
+	ScrollingFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	ScrollingFrame.BorderSizePixel = 0
+	ScrollingFrame.Position = UDim2.new(0.00143788045, 0, 1.34120536, 0)
+	ScrollingFrame.Size = UDim2.new(0, 359, 0, 109)
+	
+	UICorner_2.Parent = ScrollingFrame
+	
+	UICorner_3.Parent = ScrollingFrame
+	
+	Searchbutton.Name = "Searchbutton"
+	Searchbutton.Parent = Search
+	Searchbutton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Searchbutton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Searchbutton.BorderSizePixel = 0
+	Searchbutton.Position = UDim2.new(1.09259403, 0, 0.102564104, 0)
+	Searchbutton.Size = UDim2.new(0, 86, 0, 30)
+	Searchbutton.Font = Enum.Font.SourceSans
+	Searchbutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Searchbutton.TextSize = 14.000
+	
+	UICorner_4.Parent = Searchbutton
+	
+	-- Scripts:
+	
+	local function RJID_fake_script() -- ScrollingFrame.LocalScript 
+		local script = Instance.new('LocalScript', ScrollingFrame)
+	
+		-- Reference to the scrolling frame
+		local resultsFrame = script.Parent
+	
+		-- Create a RemoteEvent to listen for button creation requests
+		local createScriptButton = Instance.new("BindableEvent", resultsFrame)
+		createScriptButton.Name = "CreateScriptButton"
+	
+		-- Function to create script display buttons inside the scrolling frame
+		local function createScriptButtonFunc(script, index)
+			local button = Instance.new("TextButton")
+			button.Size = UDim2.new(1, -10, 0, 50)  -- Customize size as needed
+			button.Position = UDim2.new(0, 5, 0, (index - 1) * 55)  -- Customize positioning as needed
+			button.Text = script.title or "Untitled"
+			button.TextSize = 14
+			button.TextColor3 = Color3.fromRGB(255, 255, 255)
+			button.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+			button.BorderSizePixel = 0
+			button.Parent = resultsFrame
+	
+			-- Execute script on button click
+			button.MouseButton1Click:Connect(function()
+				local scriptContent = script.script or ""
+				if scriptContent ~= "" then
+					local success, err = pcall(function()
+						loadstring(scriptContent)()
+					end)
+					if not success then
+						warn("Failed to execute script: " .. err)
+					end
+				end
+			end)
+		end
+	
+		-- Connect the RemoteEvent to create the button
+		createScriptButton.Event:Connect(createScriptButtonFunc)
+	
+	end
+	coroutine.wrap(RJID_fake_script)()
+	local function CLMBCNN_fake_script() -- Searchbutton.LocalScript 
+		local script = Instance.new('LocalScript', Searchbutton)
+	
+		local HttpService = game:GetService("HttpService")
+		local searchButton = script.Parent
+		local resultsFrame = script.Parent.Parent:FindFirstChild("ScrollingFrame")
+		local searchBox = script.Parent.Parent:FindFirstChild("Search")  -- Assumes the TextBox is named "Search"
+	
+		-- Debugging: Check if the elements are correctly referenced
+		print("searchBox:", searchBox)
+		print("searchButton:", searchButton)
+		print("resultsFrame:", resultsFrame)
+	
+		if not searchBox or not searchButton or not resultsFrame then
+			error("One of the UI elements (TextBox, TextButton, or ScrollingFrame) is not found. Please check the hierarchy.")
+		end
+	
+		-- Function to fetch scripts from the API
+		local function fetchScripts(query)
+			local url = "https://scriptblox.com/api/script/search?filters=free&q=" .. query
+			local success, response = pcall(function()
+				return game:HttpGet(url)
+			end)
+	
+			if not success then
+				warn("Failed to fetch scripts: " .. response)
+				return {}
+			end
+	
+			local success, data = pcall(function()
+				return HttpService:JSONDecode(response)
+			end)
+	
+			if not success then
+				warn("Failed to decode JSON: " .. data)
+				return {}
+			end
+	
+			return data.result.scripts or {}
+		end
+	
+		-- Function to clear previous search results
+		local function clearResults()
+			for _, child in ipairs(resultsFrame:GetChildren()) do
+				if child:IsA("TextButton") then
+					child:Destroy()
+				end
+			end
+		end
+	
+		-- Search button click event
+		searchButton.MouseButton1Click:Connect(function()
+			local query = searchBox and searchBox.Text or ""
+			print("Search Query:", query)  -- Debugging
+			if query ~= "" then
+				clearResults()
+				local scripts = fetchScripts(query)
+				for i, scriptData in ipairs(scripts) do
+					local button = Instance.new("TextButton")
+					button.Size = UDim2.new(1, 0, 0, 50)
+					button.Position = UDim2.new(0, 0, 0, i * 50)
+					button.Text = scriptData.name  -- Display the script's name
+					button.Parent = resultsFrame
+	
+					-- Execute the script on button click
+					button.MouseButton1Click:Connect(function()
+						local success, err = pcall(function()
+							loadstring(scriptData.script)()
+						end)
+						if not success then
+							warn("Failed to execute script: " .. err)
+						end
+					end)
+				end
+			end
+		end)
+	
+	end
+	coroutine.wrap(CLMBCNN_fake_script)()
+	
+end
+coroutine.wrap(YVRQA_fake_script)()
