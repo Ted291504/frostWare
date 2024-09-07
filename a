@@ -44,6 +44,7 @@ local Search = Instance.new("TextBox")
 local UICorner_14 = Instance.new("UICorner")
 local ScrollingFrame = Instance.new("ScrollingFrame")
 local UICorner_15 = Instance.new("UICorner")
+local UIListLayout = Instance.new("UIListLayout")
 local TextButton = Instance.new("TextButton")
 local UICorner_16 = Instance.new("UICorner")
 
@@ -348,6 +349,7 @@ UICorner_14.Parent = Search
 ScrollingFrame.Parent = Search
 ScrollingFrame.Active = true
 ScrollingFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame.BackgroundTransparency = 0.600
 ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ScrollingFrame.BorderSizePixel = 0
 ScrollingFrame.Position = UDim2.new(0.00143788045, 0, 1.34120536, 0)
@@ -355,8 +357,12 @@ ScrollingFrame.Size = UDim2.new(0, 359, 0, 109)
 
 UICorner_15.Parent = ScrollingFrame
 
+UIListLayout.Parent = ScrollingFrame
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
 TextButton.Parent = Search
 TextButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BackgroundTransparency = 0.600
 TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.BorderSizePixel = 0
 TextButton.Position = UDim2.new(1.07608628, 0, -0.0171305332, 0)
@@ -370,31 +376,31 @@ UICorner_16.Parent = TextButton
 
 -- Scripts:
 
-local function NXZDGP_fake_script() -- Executor.LocalScript 
+local function LWQRZRR_fake_script() -- Executor.LocalScript 
 	local script = Instance.new('LocalScript', Executor)
 
 	
 end
-coroutine.wrap(NXZDGP_fake_script)()
-local function BZGT_fake_script() -- home.LocalScript 
+coroutine.wrap(LWQRZRR_fake_script)()
+local function UOIQRRR_fake_script() -- home.LocalScript 
 	local script = Instance.new('LocalScript', home)
 
 	
 end
-coroutine.wrap(BZGT_fake_script)()
-local function BLGUDB_fake_script() -- Settings.LocalScript 
+coroutine.wrap(UOIQRRR_fake_script)()
+local function HZGLXY_fake_script() -- Settings.LocalScript 
 	local script = Instance.new('LocalScript', Settings)
 
 	
 end
-coroutine.wrap(BLGUDB_fake_script)()
-local function HCVVINQ_fake_script() -- Clear.LocalScript 
+coroutine.wrap(HZGLXY_fake_script)()
+local function HIHFQ_fake_script() -- Clear.LocalScript 
 	local script = Instance.new('LocalScript', Clear)
 
 	
 end
-coroutine.wrap(HCVVINQ_fake_script)()
-local function STXDA_fake_script() -- Execute.LocalScript 
+coroutine.wrap(HIHFQ_fake_script)()
+local function OCIKHMS_fake_script() -- Execute.LocalScript 
 	local script = Instance.new('LocalScript', Execute)
 
 	local TextBox = script.Parent.Parent
@@ -412,20 +418,20 @@ local function STXDA_fake_script() -- Execute.LocalScript
 	end)
 	
 end
-coroutine.wrap(STXDA_fake_script)()
-local function APBXF_fake_script() -- Paste.LocalScript 
+coroutine.wrap(OCIKHMS_fake_script)()
+local function JGVCNCW_fake_script() -- Paste.LocalScript 
 	local script = Instance.new('LocalScript', Paste)
 
 	
 end
-coroutine.wrap(APBXF_fake_script)()
-local function DHSRQ_fake_script() -- ImageButton.LocalScript 
+coroutine.wrap(JGVCNCW_fake_script)()
+local function BUCU_fake_script() -- ImageButton.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton)
 
 	
 end
-coroutine.wrap(DHSRQ_fake_script)()
-local function ZJLZES_fake_script() -- ImageLabel_3.LocalScript 
+coroutine.wrap(BUCU_fake_script)()
+local function TAUVHN_fake_script() -- ImageLabel_3.LocalScript 
 	local script = Instance.new('LocalScript', ImageLabel_3)
 
 	local Players = game:GetService("Players")
@@ -434,8 +440,8 @@ local function ZJLZES_fake_script() -- ImageLabel_3.LocalScript
 	local content = Players:GetUserThumbnailAsync(Player.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size150x150)
 	script.Parent.Image = content
 end
-coroutine.wrap(ZJLZES_fake_script)()
-local function KVSLJFR_fake_script() -- TextLabel_2.LocalScript 
+coroutine.wrap(TAUVHN_fake_script)()
+local function WURLLV_fake_script() -- TextLabel_2.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_2)
 
 	local textLabel = script.Parent
@@ -445,8 +451,8 @@ local function KVSLJFR_fake_script() -- TextLabel_2.LocalScript
 	textLabel.TextWrapped = true
 	
 end
-coroutine.wrap(KVSLJFR_fake_script)()
-local function PUOT_fake_script() -- Time.LocalScript 
+coroutine.wrap(WURLLV_fake_script)()
+local function VDMUEI_fake_script() -- Time.LocalScript 
 	local script = Instance.new('LocalScript', Time)
 
 	
@@ -464,36 +470,14 @@ local function PUOT_fake_script() -- Time.LocalScript
 	updateTime()
 	
 end
-coroutine.wrap(PUOT_fake_script)()
-local function YHOG_fake_script() -- Main.LocalScript 
+coroutine.wrap(VDMUEI_fake_script)()
+local function AFOSP_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 
-	local frame = script.Parent
-	
-	local function onDragStart(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 then
-			local startPos = frame.Position
-			local mouseStart = input.Position
-			local function onDragMove(input)
-				local delta = input.Position - mouseStart
-				frame.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-			end
-			local function onDragEnd(input)
-				if input.UserInputType == Enum.UserInputType.MouseButton1 then
-					game:GetService("UserInputService").InputChanged:Disconnect(onDragMove)
-					game:GetService("UserInputService").InputEnded:Disconnect(onDragEnd)
-				end
-			end
-			game:GetService("UserInputService").InputChanged:Connect(onDragMove)
-			game:GetService("UserInputService").InputEnded:Connect(onDragEnd)
-		end
-	end
-	
-	frame.InputBegan:Connect(onDragStart)
-	
+	-- a
 end
-coroutine.wrap(YHOG_fake_script)()
-local function WZHS_fake_script() -- Search.LocalScript 
+coroutine.wrap(AFOSP_fake_script)()
+local function HYNFHC_fake_script() -- Search.LocalScript 
 	local script = Instance.new('LocalScript', Search)
 
 	local HttpService = game:GetService("HttpService")
@@ -503,15 +487,22 @@ local function WZHS_fake_script() -- Search.LocalScript
 	local resultsFrame = searchBox:FindFirstChild("ScrollingFrame")
 	-- Function to create script display buttons
 	local function createScriptButton(script, index)
-		local button = Instance.new("TextButton")
-		button.Size = UDim2.new(1, -10, 0, 50)
-		button.Position = UDim2.new(0, 5, 0, (index - 1) * 55)
-		button.Text = script.title or "Untitled"
-		button.TextSize = 14
-		button.TextColor3 = Color3.fromRGB(255, 255, 255)
-		button.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
-		button.BorderSizePixel = 0
-		button.Parent = resultsFrame
+	
+		local TextButton = Instance.new("TextButton")
+		local UICorner = Instance.new("UICorner")
+		TextButton.Parent = resultsFrame
+		TextButton.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
+		TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		TextButton.BorderSizePixel = 0
+		TextButton.Position = UDim2.new(0.171111107, 0, 0.528888822, 0)
+		TextButton.Size = UDim2.new(0, 193, 0, 35)
+		TextButton.Font = Enum.Font.SourceSans
+		TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextButton.TextScaled = true
+		TextButton.TextSize = 20.000
+		TextButton.TextWrapped = true
+	
+		UICorner.Parent = TextButton
 	
 		-- Execute script on button click
 		button.MouseButton1Click:Connect(function()
@@ -573,4 +564,4 @@ local function WZHS_fake_script() -- Search.LocalScript
 	end)
 	
 end
-coroutine.wrap(WZHS_fake_script)()
+coroutine.wrap(HYNFHC_fake_script)()
