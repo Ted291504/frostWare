@@ -609,7 +609,7 @@ UICorner_20.Parent = OpenButton
 
 -- Scripts:
 
-local function OUFEN_fake_script() -- Executor.LocalScript 
+local function PYEZA_fake_script() -- Executor.LocalScript 
 	local script = Instance.new('LocalScript', Executor)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -619,8 +619,8 @@ local function OUFEN_fake_script() -- Executor.LocalScript
 		script.Parent.Parent.Parent.Settings.Visible = false
 	end)
 end
-coroutine.wrap(OUFEN_fake_script)()
-local function HSJO_fake_script() -- home.LocalScript 
+coroutine.wrap(PYEZA_fake_script)()
+local function OOOHU_fake_script() -- home.LocalScript 
 	local script = Instance.new('LocalScript', home)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -630,8 +630,8 @@ local function HSJO_fake_script() -- home.LocalScript
 		script.Parent.Parent.Parent.Settings.Visible = false
 	end)
 end
-coroutine.wrap(HSJO_fake_script)()
-local function QGZHY_fake_script() -- Settings.LocalScript 
+coroutine.wrap(OOOHU_fake_script)()
+local function TSYBC_fake_script() -- Settings.LocalScript 
 	local script = Instance.new('LocalScript', Settings)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -641,8 +641,8 @@ local function QGZHY_fake_script() -- Settings.LocalScript
 		script.Parent.Parent.Parent.Settings.Visible = true
 	end)
 end
-coroutine.wrap(QGZHY_fake_script)()
-local function SCVF_fake_script() -- Credits.LocalScript 
+coroutine.wrap(TSYBC_fake_script)()
+local function QDIVW_fake_script() -- Credits.LocalScript 
 	local script = Instance.new('LocalScript', Credits)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -652,8 +652,8 @@ local function SCVF_fake_script() -- Credits.LocalScript
 		script.Parent.Parent.Parent.Settings.Visible = false
 	end)
 end
-coroutine.wrap(SCVF_fake_script)()
-local function EKUS_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(QDIVW_fake_script)()
+local function XWOC_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -662,8 +662,8 @@ local function EKUS_fake_script() -- TextButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(EKUS_fake_script)()
-local function JHSSWI_fake_script() -- Top.Draggable 
+coroutine.wrap(XWOC_fake_script)()
+local function OKFVG_fake_script() -- Top.Draggable 
 	local script = Instance.new('LocalScript', Top)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -701,15 +701,15 @@ local function JHSSWI_fake_script() -- Top.Draggable
 		end
 	end)
 end
-coroutine.wrap(JHSSWI_fake_script)()
-local function MSAZJ_fake_script() -- User.LocalScript 
+coroutine.wrap(OKFVG_fake_script)()
+local function BBHKR_fake_script() -- User.LocalScript 
 	local script = Instance.new('LocalScript', User)
 
 	local image = script.Parent
 	image.Image = game.Players:GetUserThumbnailAsync(game.Players.LocalPlayer.UserId,Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
 end
-coroutine.wrap(MSAZJ_fake_script)()
-local function NCILJ_fake_script() -- UserText.LocalScript 
+coroutine.wrap(BBHKR_fake_script)()
+local function NLVDR_fake_script() -- UserText.LocalScript 
 	local script = Instance.new('LocalScript', UserText)
 
 	local user = game.Players.LocalPlayer.Name
@@ -717,15 +717,15 @@ local function NCILJ_fake_script() -- UserText.LocalScript
 	
 	txt.Text = "Welcome, "..user
 end
-coroutine.wrap(NCILJ_fake_script)()
-local function EMRBUJ_fake_script() -- Main.LocalScript 
+coroutine.wrap(NLVDR_fake_script)()
+local function GJGFM_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 
 	task.wait(2)
 	warn("Sorry about all them errors that is to do with frost ware gui :) Stay frosty my sexy")
 end
-coroutine.wrap(EMRBUJ_fake_script)()
-local function CWUQ_fake_script() -- Search.LocalScript 
+coroutine.wrap(GJGFM_fake_script)()
+local function LPMRCF_fake_script() -- Search.LocalScript 
 	local script = Instance.new('LocalScript', Search)
 
 	local HttpService = game:GetService("HttpService")
@@ -844,8 +844,8 @@ local function CWUQ_fake_script() -- Search.LocalScript
 	end)
 	
 end
-coroutine.wrap(CWUQ_fake_script)()
-local function FGUSSVU_fake_script() -- Clear.LocalScript 
+coroutine.wrap(LPMRCF_fake_script)()
+local function TCJD_fake_script() -- Clear.LocalScript 
 	local script = Instance.new('LocalScript', Clear)
 
 	local TextBox = script.Parent.Parent
@@ -855,8 +855,8 @@ local function FGUSSVU_fake_script() -- Clear.LocalScript
 	end)
 	
 end
-coroutine.wrap(FGUSSVU_fake_script)()
-local function EPXI_fake_script() -- Execute.LocalScript 
+coroutine.wrap(TCJD_fake_script)()
+local function JASZIP_fake_script() -- Execute.LocalScript 
 	local script = Instance.new('LocalScript', Execute)
 
 	local TextBox = script.Parent.Parent
@@ -874,14 +874,14 @@ local function EPXI_fake_script() -- Execute.LocalScript
 	end)
 	
 end
-coroutine.wrap(EPXI_fake_script)()
-local function CEJKNRH_fake_script() -- Paste.LocalScript 
+coroutine.wrap(JASZIP_fake_script)()
+local function SSHR_fake_script() -- Paste.LocalScript 
 	local script = Instance.new('LocalScript', Paste)
 
 	--skibidi toilet
 end
-coroutine.wrap(CEJKNRH_fake_script)()
-local function QOCVDK_fake_script() -- OpenButton.LocalScript 
+coroutine.wrap(SSHR_fake_script)()
+local function CYFI_fake_script() -- OpenButton.LocalScript 
 	local script = Instance.new('LocalScript', OpenButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -889,8 +889,8 @@ local function QOCVDK_fake_script() -- OpenButton.LocalScript
 	    script.Parent.Parent["Open Button"].Visible = false
 	end)
 end
-coroutine.wrap(QOCVDK_fake_script)()
-local function LXKJHX_fake_script() -- OpenButton.Drag 
+coroutine.wrap(CYFI_fake_script)()
+local function JXCOTZ_fake_script() -- OpenButton.Drag 
 	local script = Instance.new('LocalScript', OpenButton)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -928,18 +928,10 @@ local function LXKJHX_fake_script() -- OpenButton.Drag
 		end
 	end)
 end
-coroutine.wrap(LXKJHX_fake_script)()
-local function JDILKPP_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(JXCOTZ_fake_script)()
+local function APDD_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
-	local frost = [[
-	___________                      __     __      __                       
-	\_   _____/______  ____  _______/  |_  /  \    /  \_____ _______   ____  
-	 |    __) \_  __ \/  _ \/  ___/\   __\ \   \/\/   /\__  \\_  __ \_/ __ \ 
-	 |     \   |  | \(  <_> )___ \  |  |    \        /  / __ \|  | \/\  ___/ 
-	 \___  /   |__|   \____/____  > |__|     \__/\  /  (____  /__|    \___  >
-	     \/                     \/                \/        \/            \/ 
-	]]
-	print(frost)
+	--aa
 end
-coroutine.wrap(JDILKPP_fake_script)()
+coroutine.wrap(APDD_fake_script)()
