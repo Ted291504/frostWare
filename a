@@ -664,12 +664,12 @@ local function HPUU_fake_script() -- User.LocalScript
 end
 coroutine.wrap(HPUU_fake_script)()
 local function FMXLH_fake_script() -- UserText.LocalScript 
-	local script = Instance.new('LocalScript', UserText)
+    local script = Instance.new('LocalScript', UserText)
 
-	local user = game.Players.LocalPlayer.Name
-	local txt = script.Parent
-	
-	txt.Text = "Welcome, "..user
+    --local user = game.Players.LocalPlayer.Name
+    local txt = script.Parent
+    
+    txt.Text = "Welcome"
 end
 coroutine.wrap(FMXLH_fake_script)()
 local function SUKHB_fake_script() -- Main.LocalScript 
