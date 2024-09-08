@@ -573,7 +573,7 @@ UICorner_18.Parent = OpenButton
 
 -- Scripts:
 
-local function FINCXHF_fake_script() -- Executor.LocalScript 
+local function BMNV_fake_script() -- Executor.LocalScript 
 	local script = Instance.new('LocalScript', Executor)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -583,8 +583,8 @@ local function FINCXHF_fake_script() -- Executor.LocalScript
 		script.Parent.Parent.Parent.Settings.Visible = false
 	end)
 end
-coroutine.wrap(FINCXHF_fake_script)()
-local function HOBP_fake_script() -- home.LocalScript 
+coroutine.wrap(BMNV_fake_script)()
+local function OTLEOHQ_fake_script() -- home.LocalScript 
 	local script = Instance.new('LocalScript', home)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -594,8 +594,8 @@ local function HOBP_fake_script() -- home.LocalScript
 		script.Parent.Parent.Parent.Settings.Visible = false
 	end)
 end
-coroutine.wrap(HOBP_fake_script)()
-local function ONFUIV_fake_script() -- Settings.LocalScript 
+coroutine.wrap(OTLEOHQ_fake_script)()
+local function SGIDQN_fake_script() -- Settings.LocalScript 
 	local script = Instance.new('LocalScript', Settings)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -605,8 +605,8 @@ local function ONFUIV_fake_script() -- Settings.LocalScript
 		script.Parent.Parent.Parent.Settings.Visible = true
 	end)
 end
-coroutine.wrap(ONFUIV_fake_script)()
-local function BBVKS_fake_script() -- Credits.LocalScript 
+coroutine.wrap(SGIDQN_fake_script)()
+local function CLDHH_fake_script() -- Credits.LocalScript 
 	local script = Instance.new('LocalScript', Credits)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -616,8 +616,8 @@ local function BBVKS_fake_script() -- Credits.LocalScript
 		script.Parent.Parent.Parent.Settings.Visible = false
 	end)
 end
-coroutine.wrap(BBVKS_fake_script)()
-local function NXGPNN_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(CLDHH_fake_script)()
+local function NSVT_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -626,8 +626,8 @@ local function NXGPNN_fake_script() -- TextButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(NXGPNN_fake_script)()
-local function CUJYFX_fake_script() -- Top.Draggable 
+coroutine.wrap(NSVT_fake_script)()
+local function QSHHSQ_fake_script() -- Top.Draggable 
 	local script = Instance.new('LocalScript', Top)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -665,15 +665,15 @@ local function CUJYFX_fake_script() -- Top.Draggable
 		end
 	end)
 end
-coroutine.wrap(CUJYFX_fake_script)()
-local function UETNB_fake_script() -- User.LocalScript 
+coroutine.wrap(QSHHSQ_fake_script)()
+local function PZUGZFI_fake_script() -- User.LocalScript 
 	local script = Instance.new('LocalScript', User)
 
 	local image = script.Parent
 	image.Image = game.Players:GetUserThumbnailAsync(game.Players.LocalPlayer.UserId,Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
 end
-coroutine.wrap(UETNB_fake_script)()
-local function TEWZ_fake_script() -- UserText.LocalScript 
+coroutine.wrap(PZUGZFI_fake_script)()
+local function IRNDN_fake_script() -- UserText.LocalScript 
 	local script = Instance.new('LocalScript', UserText)
 
 	local user = game.Players.LocalPlayer.Name
@@ -681,14 +681,14 @@ local function TEWZ_fake_script() -- UserText.LocalScript
 	
 	txt.Text = "Welcome, "..user
 end
-coroutine.wrap(TEWZ_fake_script)()
-local function IEVR_fake_script() -- Main.LocalScript 
+coroutine.wrap(IRNDN_fake_script)()
+local function MDJJJV_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 
 	-- a
 end
-coroutine.wrap(IEVR_fake_script)()
-local function BLOIGOU_fake_script() -- Search.LocalScript 
+coroutine.wrap(MDJJJV_fake_script)()
+local function PEHERWB_fake_script() -- Search.LocalScript 
 	local script = Instance.new('LocalScript', Search)
 
 	local HttpService = game:GetService("HttpService")
@@ -807,8 +807,8 @@ local function BLOIGOU_fake_script() -- Search.LocalScript
 	end)
 	
 end
-coroutine.wrap(BLOIGOU_fake_script)()
-local function ZYNU_fake_script() -- Clear.LocalScript 
+coroutine.wrap(PEHERWB_fake_script)()
+local function BIQNA_fake_script() -- Clear.LocalScript 
 	local script = Instance.new('LocalScript', Clear)
 
 	local TextBox = script.Parent.Parent
@@ -818,8 +818,8 @@ local function ZYNU_fake_script() -- Clear.LocalScript
 	end)
 	
 end
-coroutine.wrap(ZYNU_fake_script)()
-local function XVIZZSO_fake_script() -- Execute.LocalScript 
+coroutine.wrap(BIQNA_fake_script)()
+local function PTWBTO_fake_script() -- Execute.LocalScript 
 	local script = Instance.new('LocalScript', Execute)
 
 	local TextBox = script.Parent.Parent
@@ -837,14 +837,14 @@ local function XVIZZSO_fake_script() -- Execute.LocalScript
 	end)
 	
 end
-coroutine.wrap(XVIZZSO_fake_script)()
-local function COYHB_fake_script() -- Paste.LocalScript 
+coroutine.wrap(PTWBTO_fake_script)()
+local function PHGYE_fake_script() -- Paste.LocalScript 
 	local script = Instance.new('LocalScript', Paste)
 
 	--skibidi toilet
 end
-coroutine.wrap(COYHB_fake_script)()
-local function ISEM_fake_script() -- OpenButton.LocalScript 
+coroutine.wrap(PHGYE_fake_script)()
+local function HIUIEF_fake_script() -- OpenButton.LocalScript 
 	local script = Instance.new('LocalScript', OpenButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -852,4 +852,43 @@ local function ISEM_fake_script() -- OpenButton.LocalScript
 	    script.Parent.Parent["Open Button"].Visible = false
 	end)
 end
-coroutine.wrap(ISEM_fake_script)()
+coroutine.wrap(HIUIEF_fake_script)()
+local function VPFTON_fake_script() -- OpenButton.Drag 
+	local script = Instance.new('LocalScript', OpenButton)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	
+	local MainFrame = script.Parent
+	local TopBar = script.Parent
+	
+	local Camera = workspace:WaitForChild("Camera")
+	
+	local DragMousePosition
+	local FramePosition
+	
+	
+	local Draggable = false
+	
+	TopBar.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			Draggable = true
+			DragMousePosition = Vector2.new(input.Position.X, input.Position.Y)
+			FramePosition= Vector2.new(MainFrame.Position.X.Scale, MainFrame.Position.Y.Scale)
+		end
+	end)
+	
+	TopBar.InputEnded:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			Draggable = false
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if Draggable == true then
+			local NewPosition = FramePosition + ( (Vector2.new(input.Position.X, input.Position.Y) - DragMousePosition) / Camera.ViewportSize)
+			MainFrame.Position = UDim2.new(NewPosition.X, 0, NewPosition.Y, 0)
+		end
+	end)
+end
+coroutine.wrap(VPFTON_fake_script)()
