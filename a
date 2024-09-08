@@ -36,41 +36,36 @@ local TextLabel_7 = Instance.new("TextLabel")
 local Settings_2 = Instance.new("Frame")
 local UICorner_7 = Instance.new("UICorner")
 local TextLabel_8 = Instance.new("TextLabel")
-local Search = Instance.new("TextBox")
-local UICorner_8 = Instance.new("UICorner")
-local ScrollingFrame = Instance.new("ScrollingFrame")
-local TextButton_2 = Instance.new("TextButton")
-local UICorner_9 = Instance.new("UICorner")
 local Executor_2 = Instance.new("Frame")
-local UICorner_10 = Instance.new("UICorner")
+local UICorner_8 = Instance.new("UICorner")
 local Code = Instance.new("TextBox")
 local Clear = Instance.new("TextButton")
-local UICorner_11 = Instance.new("UICorner")
+local UICorner_9 = Instance.new("UICorner")
 local Execute = Instance.new("TextButton")
-local UICorner_12 = Instance.new("UICorner")
-local UICorner_13 = Instance.new("UICorner")
+local UICorner_10 = Instance.new("UICorner")
+local UICorner_11 = Instance.new("UICorner")
 local Paste = Instance.new("TextButton")
-local UICorner_14 = Instance.new("UICorner")
+local UICorner_12 = Instance.new("UICorner")
 local Credits_2 = Instance.new("Frame")
-local UICorner_15 = Instance.new("UICorner")
+local UICorner_13 = Instance.new("UICorner")
 local TextLabel_9 = Instance.new("TextLabel")
 local ImageLabel_2 = Instance.new("ImageLabel")
 local ImageLabel_3 = Instance.new("ImageLabel")
 local TextLabel_10 = Instance.new("TextLabel")
-local UICorner_16 = Instance.new("UICorner")
+local UICorner_14 = Instance.new("UICorner")
 local TextLabel_11 = Instance.new("TextLabel")
-local UICorner_17 = Instance.new("UICorner")
+local UICorner_15 = Instance.new("UICorner")
 local TextLabel_12 = Instance.new("TextLabel")
 local TextLabel_13 = Instance.new("TextLabel")
-local UICorner_18 = Instance.new("UICorner")
+local UICorner_16 = Instance.new("UICorner")
 local TextLabel_14 = Instance.new("TextLabel")
-local UICorner_19 = Instance.new("UICorner")
+local UICorner_17 = Instance.new("UICorner")
 local OpenButton = Instance.new("ImageButton")
-local UICorner_20 = Instance.new("UICorner")
+local UICorner_18 = Instance.new("UICorner")
 
 --Properties:
 
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui") 
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Main.Name = "Main"
@@ -365,47 +360,6 @@ TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_8.TextSize = 32.000
 TextLabel_8.TextWrapped = true
 
-Search.Name = "Search"
-Search.Parent = Main
-Search.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Search.BackgroundTransparency = 0.400
-Search.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Search.BorderSizePixel = 0
-Search.Position = UDim2.new(0.142222226, 0, 0.213185966, 0)
-Search.Size = UDim2.new(0, 293, 0, 39)
-Search.Visible = false
-Search.Font = Enum.Font.SourceSans
-Search.Text = ""
-Search.TextColor3 = Color3.fromRGB(255, 255, 255)
-Search.TextSize = 14.000
-
-UICorner_8.Parent = Search
-
-ScrollingFrame.Parent = Search
-ScrollingFrame.Active = true
-ScrollingFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-ScrollingFrame.BackgroundTransparency = 0.600
-ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ScrollingFrame.BorderSizePixel = 0
-ScrollingFrame.Position = UDim2.new(0.00143788045, 0, 1.34120536, 0)
-ScrollingFrame.Size = UDim2.new(0, 359, 0, 109)
-ScrollingFrame.HorizontalScrollBarInset = Enum.ScrollBarInset.ScrollBar
-ScrollingFrame.ScrollBarThickness = 20
-
-TextButton_2.Parent = Search
-TextButton_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_2.BackgroundTransparency = 0.600
-TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_2.BorderSizePixel = 0
-TextButton_2.Position = UDim2.new(1.07608628, 0, -0.0171305332, 0)
-TextButton_2.Size = UDim2.new(0, 44, 0, 39)
-TextButton_2.Font = Enum.Font.SourceSans
-TextButton_2.Text = "Search"
-TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_2.TextSize = 14.000
-
-UICorner_9.Parent = TextButton_2
-
 Executor_2.Name = "Executor"
 Executor_2.Parent = Main
 Executor_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -416,7 +370,7 @@ Executor_2.Position = UDim2.new(0.101626016, 0, 0.179661021, 0)
 Executor_2.Size = UDim2.new(0, 433, 0, 233)
 Executor_2.Visible = false
 
-UICorner_10.Parent = Executor_2
+UICorner_8.Parent = Executor_2
 
 Code.Name = "Code"
 Code.Parent = Executor_2
@@ -447,7 +401,7 @@ Clear.Text = "Clear"
 Clear.TextColor3 = Color3.fromRGB(255, 255, 255)
 Clear.TextSize = 17.000
 
-UICorner_11.Parent = Clear
+UICorner_9.Parent = Clear
 
 Execute.Name = "Execute"
 Execute.Parent = Code
@@ -461,9 +415,9 @@ Execute.Text = "Execute"
 Execute.TextColor3 = Color3.fromRGB(255, 255, 255)
 Execute.TextSize = 17.000
 
-UICorner_12.Parent = Execute
+UICorner_10.Parent = Execute
 
-UICorner_13.Parent = Code
+UICorner_11.Parent = Code
 
 Paste.Name = "Paste"
 Paste.Parent = Code
@@ -477,7 +431,7 @@ Paste.Text = "Paste"
 Paste.TextColor3 = Color3.fromRGB(255, 255, 255)
 Paste.TextSize = 17.000
 
-UICorner_14.Parent = Paste
+UICorner_12.Parent = Paste
 
 Credits_2.Name = "Credits"
 Credits_2.Parent = Main
@@ -489,7 +443,7 @@ Credits_2.Position = UDim2.new(0.101138234, 0, 0.171977416, 0)
 Credits_2.Size = UDim2.new(0, 433, 0, 237)
 Credits_2.Visible = false
 
-UICorner_15.Parent = Credits_2
+UICorner_13.Parent = Credits_2
 
 TextLabel_9.Parent = Credits_2
 TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -532,7 +486,7 @@ TextLabel_10.TextColor3 = Color3.fromRGB(3, 7, 255)
 TextLabel_10.TextSize = 29.000
 TextLabel_10.TextWrapped = true
 
-UICorner_16.Parent = TextLabel_10
+UICorner_14.Parent = TextLabel_10
 
 TextLabel_11.Parent = Credits_2
 TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -547,7 +501,7 @@ TextLabel_11.TextColor3 = Color3.fromRGB(0, 255, 255)
 TextLabel_11.TextSize = 29.000
 TextLabel_11.TextWrapped = true
 
-UICorner_17.Parent = TextLabel_11
+UICorner_15.Parent = TextLabel_11
 
 TextLabel_12.Parent = Credits_2
 TextLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -576,7 +530,7 @@ TextLabel_13.TextColor3 = Color3.fromRGB(3, 7, 255)
 TextLabel_13.TextSize = 29.000
 TextLabel_13.TextWrapped = true
 
-UICorner_18.Parent = TextLabel_13
+UICorner_16.Parent = TextLabel_13
 
 TextLabel_14.Parent = Credits_2
 TextLabel_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -592,7 +546,7 @@ TextLabel_14.TextColor3 = Color3.fromRGB(3, 7, 255)
 TextLabel_14.TextSize = 29.000
 TextLabel_14.TextWrapped = true
 
-UICorner_19.Parent = TextLabel_14
+UICorner_17.Parent = TextLabel_14
 
 OpenButton.Name = "Open Button"
 OpenButton.Parent = ScreenGui
@@ -604,12 +558,12 @@ OpenButton.Size = UDim2.new(0, 70, 0, 71)
 OpenButton.Visible = false
 OpenButton.Image = "rbxassetid://104305620466966"
 
-UICorner_20.CornerRadius = UDim.new(1, 0)
-UICorner_20.Parent = OpenButton
+UICorner_18.CornerRadius = UDim.new(1, 0)
+UICorner_18.Parent = OpenButton
 
 -- Scripts:
 
-local function PYEZA_fake_script() -- Executor.LocalScript 
+local function NVXVLM_fake_script() -- Executor.LocalScript 
 	local script = Instance.new('LocalScript', Executor)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -619,8 +573,8 @@ local function PYEZA_fake_script() -- Executor.LocalScript
 		script.Parent.Parent.Parent.Settings.Visible = false
 	end)
 end
-coroutine.wrap(PYEZA_fake_script)()
-local function OOOHU_fake_script() -- home.LocalScript 
+coroutine.wrap(NVXVLM_fake_script)()
+local function ZRKA_fake_script() -- home.LocalScript 
 	local script = Instance.new('LocalScript', home)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -630,8 +584,8 @@ local function OOOHU_fake_script() -- home.LocalScript
 		script.Parent.Parent.Parent.Settings.Visible = false
 	end)
 end
-coroutine.wrap(OOOHU_fake_script)()
-local function TSYBC_fake_script() -- Settings.LocalScript 
+coroutine.wrap(ZRKA_fake_script)()
+local function JRWL_fake_script() -- Settings.LocalScript 
 	local script = Instance.new('LocalScript', Settings)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -641,8 +595,8 @@ local function TSYBC_fake_script() -- Settings.LocalScript
 		script.Parent.Parent.Parent.Settings.Visible = true
 	end)
 end
-coroutine.wrap(TSYBC_fake_script)()
-local function QDIVW_fake_script() -- Credits.LocalScript 
+coroutine.wrap(JRWL_fake_script)()
+local function MXDI_fake_script() -- Credits.LocalScript 
 	local script = Instance.new('LocalScript', Credits)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -652,8 +606,8 @@ local function QDIVW_fake_script() -- Credits.LocalScript
 		script.Parent.Parent.Parent.Settings.Visible = false
 	end)
 end
-coroutine.wrap(QDIVW_fake_script)()
-local function XWOC_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(MXDI_fake_script)()
+local function QPFP_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -662,8 +616,8 @@ local function XWOC_fake_script() -- TextButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(XWOC_fake_script)()
-local function OKFVG_fake_script() -- Top.Draggable 
+coroutine.wrap(QPFP_fake_script)()
+local function PEWWH_fake_script() -- Top.Draggable 
 	local script = Instance.new('LocalScript', Top)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -701,15 +655,15 @@ local function OKFVG_fake_script() -- Top.Draggable
 		end
 	end)
 end
-coroutine.wrap(OKFVG_fake_script)()
-local function BBHKR_fake_script() -- User.LocalScript 
+coroutine.wrap(PEWWH_fake_script)()
+local function HPUU_fake_script() -- User.LocalScript 
 	local script = Instance.new('LocalScript', User)
 
 	local image = script.Parent
 	image.Image = game.Players:GetUserThumbnailAsync(game.Players.LocalPlayer.UserId,Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
 end
-coroutine.wrap(BBHKR_fake_script)()
-local function NLVDR_fake_script() -- UserText.LocalScript 
+coroutine.wrap(HPUU_fake_script)()
+local function FMXLH_fake_script() -- UserText.LocalScript 
 	local script = Instance.new('LocalScript', UserText)
 
 	local user = game.Players.LocalPlayer.Name
@@ -717,135 +671,15 @@ local function NLVDR_fake_script() -- UserText.LocalScript
 	
 	txt.Text = "Welcome, "..user
 end
-coroutine.wrap(NLVDR_fake_script)()
-local function GJGFM_fake_script() -- Main.LocalScript 
+coroutine.wrap(FMXLH_fake_script)()
+local function SUKHB_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 
 	task.wait(2)
 	warn("Sorry about all them errors that is to do with frost ware gui :) Stay frosty my sexy")
 end
-coroutine.wrap(GJGFM_fake_script)()
-local function LPMRCF_fake_script() -- Search.LocalScript 
-	local script = Instance.new('LocalScript', Search)
-
-	local HttpService = game:GetService("HttpService")
-	
-	local searchBox = script.Parent
-	local searchButton = searchBox:FindFirstChild("TextButton")
-	local resultsFrame = searchBox:FindFirstChild("ScrollingFrame")
-	
-	
-	
-	local function createScriptButton(script, index)
-		local button = Instance.new("Frame")
-		local buttonImage = Instance.new("ImageLabel")
-		local buttonText = Instance.new("TextLabel")
-		local UICorner = Instance.new("UICorner")
-	
-		button.Name = "ScriptButton"
-		button.Parent = resultsFrame
-		button.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-		button.BorderSizePixel = 0
-		button.Position = UDim2.new(0, 10, 0, (index - 1) * 90 + 10) 
-		button.Size = UDim2.new(0, 320, 0, 80)
-		button.ClipsDescendants = true
-	
-		
-		buttonImage.Parent = button
-		buttonImage.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
-		buttonImage.Position = UDim2.new(0, 5, 0, 5)
-		buttonImage.Size = UDim2.new(0, 70, 0, 70)
-		buttonImage.Image = script.image or "rbxassetid://0"
-		buttonImage.ScaleType = Enum.ScaleType.Crop
-	
-		
-		buttonText.Parent = button
-		buttonText.BackgroundTransparency = 1
-		buttonText.Position = UDim2.new(0, 80, 0, 5)
-		buttonText.Size = UDim2.new(0, 230, 0, 70)
-		buttonText.TextColor3 = Color3.fromRGB(255, 255, 255)
-		buttonText.TextSize = 16
-		buttonText.Text = script.title or "Fuck you monkey"
-		buttonText.TextWrapped = true
-		buttonText.TextScaled = true
-	
-		UICorner.Parent = button
-	
-		button.MouseButton1Click:Connect(function()
-			local scriptContent = script.script or ""
-			if scriptContent ~= "" then
-				local success, err = pcall(function()
-					loadstring(scriptContent)()
-				end)
-				if not success then
-					warn("Failed to execute script: " .. err)
-				end
-			end
-		end)
-	
-		resultsFrame.CanvasSize = UDim2.new(0, 0, 0, (index - 1) * 90 + 90)
-	end
-	
-	
-	local function fetchScripts(query)
-		local url = "https://scriptblox.com/api/script/search?filters=free&q=" .. query
-		local success, response = pcall(function()
-			return game:HttpGet(url)
-		end)
-	
-		if not success then
-			warn("Failed to fetch scripts: " .. response)
-			return {}
-		end
-	
-		local success, data = pcall(function()
-			return HttpService:JSONDecode(response)
-		end)
-	
-		if not success then
-			warn("Failed to decode JSON: " .. data)
-			return {}
-		end
-	
-		if data.result and data.result.scripts then
-			return data.result.scripts
-		else
-			warn("Unexpected API response format: " .. tostring(data))
-			return {}
-		end
-	end
-	
-	
-	local function clearResults()
-		for _, child in ipairs(resultsFrame:GetChildren()) do
-			if child:IsA("Frame") and child.Name == "ScriptButton" then
-				child:Destroy()
-			end
-		end
-	end
-	
-	
-	searchButton.MouseButton1Click:Connect(function()
-		local query = searchBox.Text
-		if query ~= "" then
-			clearResults()
-			local scripts = fetchScripts(query)
-			if #scripts == 0 then
-				warn("No scripts found.")
-			end
-			for i, script in ipairs(scripts) do
-				if script.title and script.script then
-					createScriptButton(script, i)
-				else
-					warn("Script missing title or content: " .. tostring(script))
-				end
-			end
-		end
-	end)
-	
-end
-coroutine.wrap(LPMRCF_fake_script)()
-local function TCJD_fake_script() -- Clear.LocalScript 
+coroutine.wrap(SUKHB_fake_script)()
+local function PHFF_fake_script() -- Clear.LocalScript 
 	local script = Instance.new('LocalScript', Clear)
 
 	local TextBox = script.Parent.Parent
@@ -855,8 +689,8 @@ local function TCJD_fake_script() -- Clear.LocalScript
 	end)
 	
 end
-coroutine.wrap(TCJD_fake_script)()
-local function JASZIP_fake_script() -- Execute.LocalScript 
+coroutine.wrap(PHFF_fake_script)()
+local function PMROOSA_fake_script() -- Execute.LocalScript 
 	local script = Instance.new('LocalScript', Execute)
 
 	local TextBox = script.Parent.Parent
@@ -874,14 +708,14 @@ local function JASZIP_fake_script() -- Execute.LocalScript
 	end)
 	
 end
-coroutine.wrap(JASZIP_fake_script)()
-local function SSHR_fake_script() -- Paste.LocalScript 
+coroutine.wrap(PMROOSA_fake_script)()
+local function NKFJBJX_fake_script() -- Paste.LocalScript 
 	local script = Instance.new('LocalScript', Paste)
 
 	--skibidi toilet
 end
-coroutine.wrap(SSHR_fake_script)()
-local function CYFI_fake_script() -- OpenButton.LocalScript 
+coroutine.wrap(NKFJBJX_fake_script)()
+local function UITBIOF_fake_script() -- OpenButton.LocalScript 
 	local script = Instance.new('LocalScript', OpenButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -889,8 +723,8 @@ local function CYFI_fake_script() -- OpenButton.LocalScript
 	    script.Parent.Parent["Open Button"].Visible = false
 	end)
 end
-coroutine.wrap(CYFI_fake_script)()
-local function JXCOTZ_fake_script() -- OpenButton.Drag 
+coroutine.wrap(UITBIOF_fake_script)()
+local function XXTZ_fake_script() -- OpenButton.Drag 
 	local script = Instance.new('LocalScript', OpenButton)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -928,10 +762,10 @@ local function JXCOTZ_fake_script() -- OpenButton.Drag
 		end
 	end)
 end
-coroutine.wrap(JXCOTZ_fake_script)()
-local function APDD_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(XXTZ_fake_script)()
+local function BJOYQ_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
-	--aa
+	
 end
-coroutine.wrap(APDD_fake_script)()
+coroutine.wrap(BJOYQ_fake_script)()
