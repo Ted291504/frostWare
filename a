@@ -660,7 +660,7 @@ local function HPUU_fake_script() -- User.LocalScript
 	local script = Instance.new('LocalScript', User)
 
 	local image = script.Parent
-	image.Image = game.Players:GetUserThumbnailAsync(game.Players.LocalPlayer.UserId,Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
+	--image.Image = game.Players:GetUserThumbnailAsync(game.Players.LocalPlayer.UserId,Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
 end
 coroutine.wrap(HPUU_fake_script)()
 local function FMXLH_fake_script() -- UserText.LocalScript 
