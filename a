@@ -714,6 +714,11 @@ local function NKFJBJX_fake_script() -- Paste.LocalScript
 
     TextBox.Text = getclipboard()
 end
+
+Paste.MouseButton1Click:Connect(function()
+	TextBox.Text = getclipboard()
+end)
+
 coroutine.wrap(NKFJBJX_fake_script)()
 local function UITBIOF_fake_script() -- OpenButton.LocalScript 
 	local script = Instance.new('LocalScript', OpenButton)
