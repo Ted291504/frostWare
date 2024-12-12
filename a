@@ -1012,5 +1012,3 @@ local function YBLWYZY_fake_script() -- OpenButton.Drag
 end
 coroutine.wrap(YBLWYZY_fake_script)()
 -- FrostWareV2.DONT DELETE is disabled.
-message.txt
-37 KB
