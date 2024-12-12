@@ -5,7 +5,6 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 })
 task.wait(10)
 
-
 -- Gui to Lua
 -- Version: 3.2
 
@@ -20,7 +19,6 @@ local Executor = Instance.new("ImageButton")
 local home = Instance.new("ImageButton")
 local Settings = Instance.new("ImageButton")
 local Credits = Instance.new("ImageButton")
-local ScriptSearcher = Instance.new("ImageButton")
 local Top = Instance.new("Frame")
 local UICorner_3 = Instance.new("UICorner")
 local TextLabel = Instance.new("TextLabel")
@@ -55,32 +53,16 @@ local UICorner_7 = Instance.new("UICorner")
 local TextLabel_11 = Instance.new("TextLabel")
 local TextLabel_12 = Instance.new("TextLabel")
 local UICorner_8 = Instance.new("UICorner")
-local ScriptSearcher_2 = Instance.new("Frame")
-local UICorner_9 = Instance.new("UICorner")
-local Text = Instance.new("TextBox")
-local UICorner_10 = Instance.new("UICorner")
-local Search = Instance.new("ImageButton")
-local Clear = Instance.new("TextButton")
-local UICorner_11 = Instance.new("UICorner")
-local results = Instance.new("ScrollingFrame")
-local UIListLayout = Instance.new("UIListLayout")
-local Result1test = Instance.new("TextLabel")
-local UICorner_12 = Instance.new("UICorner")
-local TextLabel_13 = Instance.new("TextLabel")
-local UICorner_13 = Instance.new("UICorner")
-local TextLabel_14 = Instance.new("TextLabel")
-local Execute = Instance.new("TextButton")
-local UICorner_14 = Instance.new("UICorner")
 local Executor_2 = Instance.new("Frame")
-local UICorner_15 = Instance.new("UICorner")
+local UICorner_9 = Instance.new("UICorner")
 local Code = Instance.new("TextBox")
-local Clear_2 = Instance.new("TextButton")
-local UICorner_16 = Instance.new("UICorner")
-local Execute_2 = Instance.new("TextButton")
-local UICorner_17 = Instance.new("UICorner")
-local UICorner_18 = Instance.new("UICorner")
+local Clear = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local Execute = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local UICorner_12 = Instance.new("UICorner")
 local OpenButton = Instance.new("ImageButton")
-local UICorner_19 = Instance.new("UICorner")
+local UICorner_13 = Instance.new("UICorner")
 
 --Properties:
 
@@ -150,16 +132,6 @@ Credits.Position = UDim2.new(0.120999999, 0, 0.439999998, 0)
 Credits.Size = UDim2.new(0, 28, 0, 28)
 Credits.Image = "rbxassetid://138073973227244"
 
-ScriptSearcher.Name = "ScriptSearcher"
-ScriptSearcher.Parent = Side
-ScriptSearcher.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScriptSearcher.BackgroundTransparency = 1.000
-ScriptSearcher.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ScriptSearcher.BorderSizePixel = 0
-ScriptSearcher.Position = UDim2.new(-0.109769382, 0, 0.558644056, 0)
-ScriptSearcher.Size = UDim2.new(0, 45, 0, 45)
-ScriptSearcher.Image = "rbxassetid://97239278789958"
-
 Top.Name = "Top"
 Top.Parent = Main
 Top.BackgroundColor3 = Color3.fromRGB(0, 39, 116)
@@ -213,7 +185,6 @@ Home.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Home.BorderSizePixel = 0
 Home.Position = UDim2.new(0.103170753, 0, 0.171977416, 0)
 Home.Size = UDim2.new(0, 433, 0, 237)
-Home.Visible = false
 
 UICorner_4.Parent = Home
 
@@ -508,126 +479,6 @@ TextLabel_12.TextWrapped = true
 
 UICorner_8.Parent = TextLabel_12
 
-ScriptSearcher_2.Name = "ScriptSearcher"
-ScriptSearcher_2.Parent = Main
-ScriptSearcher_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-ScriptSearcher_2.BackgroundTransparency = 0.600
-ScriptSearcher_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ScriptSearcher_2.BorderSizePixel = 0
-ScriptSearcher_2.Position = UDim2.new(0.103170753, 0, 0.171977416, 0)
-ScriptSearcher_2.Size = UDim2.new(0, 433, 0, 237)
-ScriptSearcher_2.Visible = false
-
-UICorner_9.Parent = ScriptSearcher_2
-
-Text.Name = "Text"
-Text.Parent = ScriptSearcher_2
-Text.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Text.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Text.BorderSizePixel = 0
-Text.Position = UDim2.new(0.0277136266, 0, 0.0548523217, 0)
-Text.Size = UDim2.new(0, 333, 0, 35)
-Text.ClearTextOnFocus = false
-Text.Font = Enum.Font.SourceSans
-Text.MultiLine = true
-Text.PlaceholderText = "Search for a script...."
-Text.Text = ""
-Text.TextColor3 = Color3.fromRGB(255, 255, 255)
-Text.TextSize = 14.000
-
-UICorner_10.Parent = Text
-
-Search.Name = "Search"
-Search.Parent = Text
-Search.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Search.BackgroundTransparency = 1.000
-Search.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Search.BorderSizePixel = 0
-Search.Position = UDim2.new(0.906000018, 0, 0.171000004, 0)
-Search.Size = UDim2.new(0, 23, 0, 23)
-Search.Image = "rbxassetid://123477244640040"
-
-Clear.Name = "Clear"
-Clear.Parent = ScriptSearcher_2
-Clear.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-Clear.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Clear.BorderSizePixel = 0
-Clear.Position = UDim2.new(0.810623586, 0, 0.0548523217, 0)
-Clear.Size = UDim2.new(0, 74, 0, 35)
-Clear.Font = Enum.Font.FredokaOne
-Clear.Text = "Clear"
-Clear.TextColor3 = Color3.fromRGB(255, 255, 255)
-Clear.TextSize = 20.000
-
-UICorner_11.Parent = Clear
-
-results.Name = "results"
-results.Parent = ScriptSearcher_2
-results.Active = true
-results.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-results.BorderColor3 = Color3.fromRGB(0, 0, 0)
-results.BorderSizePixel = 0
-results.Position = UDim2.new(0.0277136266, 0, 0.25444591, 0)
-results.Size = UDim2.new(0, 413, 0, 168)
-results.ZIndex = 2
-results.CanvasSize = UDim2.new(0, 0, 50, 0)
-
-UIListLayout.Parent = results
-UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
-
-Result1test.Name = "Result1test"
-Result1test.Parent = ScriptSearcher_2
-Result1test.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
-Result1test.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Result1test.BorderSizePixel = 0
-Result1test.Position = UDim2.new(0.043879766, 0, 0.286919832, 0)
-Result1test.Size = UDim2.new(0, 190, 0, 100)
-Result1test.ZIndex = 3
-Result1test.Font = Enum.Font.SourceSans
-Result1test.Text = ""
-Result1test.TextColor3 = Color3.fromRGB(0, 0, 0)
-Result1test.TextSize = 14.000
-
-UICorner_12.Parent = Result1test
-
-TextLabel_13.Parent = Result1test
-TextLabel_13.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
-TextLabel_13.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_13.BorderSizePixel = 0
-TextLabel_13.Size = UDim2.new(0, 190, 0, 21)
-TextLabel_13.Font = Enum.Font.FredokaOne
-TextLabel_13.Text = "Result 1 script name"
-TextLabel_13.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_13.TextSize = 14.000
-
-UICorner_13.Parent = TextLabel_13
-
-TextLabel_14.Parent = Result1test
-TextLabel_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_14.BackgroundTransparency = 1.000
-TextLabel_14.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_14.BorderSizePixel = 0
-TextLabel_14.Position = UDim2.new(-0.32631579, 0, 0.639999986, 0)
-TextLabel_14.Size = UDim2.new(0, 200, 0, 50)
-TextLabel_14.Font = Enum.Font.Roboto
-TextLabel_14.Text = "Verified: No"
-TextLabel_14.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_14.TextSize = 14.000
-
-Execute.Name = "Execute"
-Execute.Parent = Result1test
-Execute.BackgroundColor3 = Color3.fromRGB(0, 147, 5)
-Execute.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Execute.BorderSizePixel = 0
-Execute.Position = UDim2.new(0.236842111, 0, 0.389999986, 0)
-Execute.Size = UDim2.new(0, 100, 0, 25)
-Execute.Font = Enum.Font.Roboto
-Execute.Text = "Execute"
-Execute.TextColor3 = Color3.fromRGB(0, 0, 0)
-Execute.TextSize = 17.000
-
-UICorner_14.Parent = Execute
-
 Executor_2.Name = "Executor"
 Executor_2.Parent = Main
 Executor_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -638,7 +489,7 @@ Executor_2.Position = UDim2.new(0.101626016, 0, 0.179661021, 0)
 Executor_2.Size = UDim2.new(0, 433, 0, 233)
 Executor_2.Visible = false
 
-UICorner_15.Parent = Executor_2
+UICorner_9.Parent = Executor_2
 
 Code.Name = "Code"
 Code.Parent = Executor_2
@@ -657,35 +508,35 @@ Code.TextWrapped = true
 Code.TextXAlignment = Enum.TextXAlignment.Left
 Code.TextYAlignment = Enum.TextYAlignment.Top
 
-Clear_2.Name = "Clear"
-Clear_2.Parent = Code
-Clear_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Clear_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Clear_2.BorderSizePixel = 0
-Clear_2.Position = UDim2.new(-0.000808023906, 0, 1.02905297, 0)
-Clear_2.Size = UDim2.new(0, 106, 0, 34)
-Clear_2.Font = Enum.Font.SourceSans
-Clear_2.Text = "Clear"
-Clear_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-Clear_2.TextSize = 17.000
+Clear.Name = "Clear"
+Clear.Parent = Code
+Clear.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Clear.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Clear.BorderSizePixel = 0
+Clear.Position = UDim2.new(-0.000808023906, 0, 1.02905297, 0)
+Clear.Size = UDim2.new(0, 106, 0, 34)
+Clear.Font = Enum.Font.SourceSans
+Clear.Text = "Clear"
+Clear.TextColor3 = Color3.fromRGB(255, 255, 255)
+Clear.TextSize = 17.000
 
-UICorner_16.Parent = Clear_2
+UICorner_10.Parent = Clear
 
-Execute_2.Name = "Execute"
-Execute_2.Parent = Code
-Execute_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Execute_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Execute_2.BorderSizePixel = 0
-Execute_2.Position = UDim2.new(0.74625659, 0, 1.02507329, 0)
-Execute_2.Size = UDim2.new(0, 106, 0, 34)
-Execute_2.Font = Enum.Font.SourceSans
-Execute_2.Text = "Execute"
-Execute_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-Execute_2.TextSize = 17.000
+Execute.Name = "Execute"
+Execute.Parent = Code
+Execute.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Execute.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Execute.BorderSizePixel = 0
+Execute.Position = UDim2.new(0.74625659, 0, 1.02507329, 0)
+Execute.Size = UDim2.new(0, 106, 0, 34)
+Execute.Font = Enum.Font.SourceSans
+Execute.Text = "Execute"
+Execute.TextColor3 = Color3.fromRGB(255, 255, 255)
+Execute.TextSize = 17.000
 
-UICorner_17.Parent = Execute_2
+UICorner_11.Parent = Execute
 
-UICorner_18.Parent = Code
+UICorner_12.Parent = Code
 
 OpenButton.Name = "Open Button"
 OpenButton.Parent = FrostWareV2
@@ -697,12 +548,12 @@ OpenButton.Size = UDim2.new(0, 70, 0, 71)
 OpenButton.Visible = false
 OpenButton.Image = "rbxassetid://104305620466966"
 
-UICorner_19.CornerRadius = UDim.new(1, 0)
-UICorner_19.Parent = OpenButton
+UICorner_13.CornerRadius = UDim.new(1, 0)
+UICorner_13.Parent = OpenButton
 
 -- Scripts:
 
-local function FBOC_fake_script() -- Executor.LocalScript 
+local function LYDBDM_fake_script() -- Executor.LocalScript 
 	local script = Instance.new('LocalScript', Executor)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -713,8 +564,8 @@ local function FBOC_fake_script() -- Executor.LocalScript
 		script.Parent.Parent.Parent.ScriptSearcher.Visible = false
 	end)
 end
-coroutine.wrap(FBOC_fake_script)()
-local function IVCNMQK_fake_script() -- home.LocalScript 
+coroutine.wrap(LYDBDM_fake_script)()
+local function PLJAO_fake_script() -- home.LocalScript 
 	local script = Instance.new('LocalScript', home)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -725,8 +576,8 @@ local function IVCNMQK_fake_script() -- home.LocalScript
 		script.Parent.Parent.Parent.ScriptSearcher.Visible = false
 	end)
 end
-coroutine.wrap(IVCNMQK_fake_script)()
-local function EJOP_fake_script() -- Settings.LocalScript 
+coroutine.wrap(PLJAO_fake_script)()
+local function XIENJC_fake_script() -- Settings.LocalScript 
 	local script = Instance.new('LocalScript', Settings)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -737,8 +588,8 @@ local function EJOP_fake_script() -- Settings.LocalScript
 		script.Parent.Parent.Parent.ScriptSearcher.Visible = false
 	end)
 end
-coroutine.wrap(EJOP_fake_script)()
-local function JUDZVTX_fake_script() -- Credits.LocalScript 
+coroutine.wrap(XIENJC_fake_script)()
+local function FQACKWE_fake_script() -- Credits.LocalScript 
 	local script = Instance.new('LocalScript', Credits)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -749,46 +600,34 @@ local function JUDZVTX_fake_script() -- Credits.LocalScript
 		script.Parent.Parent.Parent.ScriptSearcher.Visible = false
 	end)
 end
-coroutine.wrap(JUDZVTX_fake_script)()
-local function SWLB_fake_script() -- ScriptSearcher.LocalScript 
-	local script = Instance.new('LocalScript', ScriptSearcher)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Parent.Credits.Visible = false
-		script.Parent.Parent.Parent.Executor.Visible = false
-		script.Parent.Parent.Parent.Home.Visible = false
-		script.Parent.Parent.Parent.Settings.Visible = false
-	    script.Parent.Parent.Parent.ScriptSearcher.Visible = true
-	end)
-end
-coroutine.wrap(SWLB_fake_script)()
-local function JKGLH_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(FQACKWE_fake_script)()
+local function QJQYB_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.Parent.Main.Visible = false
-	    script.Parent.Parent.Parent.Parent["Open Button"].Visible = true
+		script.Parent.Parent.Parent.Parent["Open Button"].Visible = true
 	end)
-	
+
 end
-coroutine.wrap(JKGLH_fake_script)()
-local function POJZ_fake_script() -- Top.Draggable 
+coroutine.wrap(QJQYB_fake_script)()
+local function MNLAMZO_fake_script() -- Top.Draggable 
 	local script = Instance.new('LocalScript', Top)
 
 	local UserInputService = game:GetService("UserInputService")
-	
-	
+
+
 	local MainFrame = script.Parent.Parent.Parent.Main
 	local TopBar = MainFrame:WaitForChild("Top")
-	
+
 	local Camera = workspace:WaitForChild("Camera")
-	
+
 	local DragMousePosition
 	local FramePosition
-	
-	
+
+
 	local Draggable = false
-	
+
 	TopBar.InputBegan:Connect(function(input)
 		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
 			Draggable = true
@@ -796,13 +635,13 @@ local function POJZ_fake_script() -- Top.Draggable
 			FramePosition= Vector2.new(MainFrame.Position.X.Scale, MainFrame.Position.Y.Scale)
 		end
 	end)
-	
+
 	TopBar.InputEnded:Connect(function(input)
 		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
 			Draggable = false
 		end
 	end)
-	
+
 	UserInputService.InputChanged:Connect(function(input)
 		if Draggable == true then
 			local NewPosition = FramePosition + ( (Vector2.new(input.Position.X, input.Position.Y) - DragMousePosition) / Camera.ViewportSize)
@@ -810,30 +649,30 @@ local function POJZ_fake_script() -- Top.Draggable
 		end
 	end)
 end
-coroutine.wrap(POJZ_fake_script)()
+coroutine.wrap(MNLAMZO_fake_script)()
 -- BasicInfo.LocalScript is disabled.
-local function SDJHTQX_fake_script() -- FPS.LocalScript 
+local function TYDCU_fake_script() -- FPS.LocalScript 
 	local script = Instance.new('LocalScript', FPS)
 
 	local txtlbl = script.Parent
 	local players = game:GetService("Players")
 	local player = players.LocalPlayer
-	
+
 	while wait() do
-		local fps = math.floor(1 / wait())
+		local fps = math.floor(999999 / wait())
 		txtlbl.Text = "FPS: ".. fps
 	end
 end
-coroutine.wrap(SDJHTQX_fake_script)()
-local function THHCDUV_fake_script() -- Subscription.LocalScript 
+coroutine.wrap(TYDCU_fake_script)()
+local function XVEXZU_fake_script() -- Subscription.LocalScript 
 	local script = Instance.new('LocalScript', Subscription)
 
 	local PremiumPlayer = {2877625446,3076617904,3494826637}
-	
+
 	local SubscriptionTag = script.Parent.Parent.Subscription
-	
+
 	local Player = game.Players.LocalPlayer
-	
+
 	while wait() do
 		local isPremium = false
 		for _, id in pairs(PremiumPlayer) do
@@ -851,144 +690,108 @@ local function THHCDUV_fake_script() -- Subscription.LocalScript
 		end
 	end
 end
-coroutine.wrap(THHCDUV_fake_script)()
-local function HYEEGB_fake_script() -- Rank.LocalScript 
+coroutine.wrap(XVEXZU_fake_script)()
+local function FOJUUCT_fake_script() -- Rank.LocalScript 
 	local script = Instance.new('LocalScript', Rank)
 
-	local owner = 3494826637
-	 
+	local owner = 1774115525
+
 	local Coo = {2877625446}
-	
+
 	local Developer = {3076617904, 2290365535}
-	
+
 	local Ranktag = script.Parent.Parent.Rank
-	
+
 	local Player = game.Players.LocalPlayer
-	
-	
+
+
 	while wait() do
 		if Player.UserId == owner then
 			Ranktag.Text = "Owner"
 			Ranktag.TextColor3 = Color3.fromRGB(255, 255, 0)
 		end
-	for _, id in pairs(Coo) do
-	if Player.UserId == id then
-			Ranktag.Text = "COO"
-			Ranktag.TextColor3 = Color3.fromRGB(255, 0, 0)
-	    return
-	end
-	end
-	for _, id2 in pairs(Developer) do
-	if Player.UserId == id2 then
-			Ranktag.Text = "Developer"
-			Ranktag.TextColor3 = Color3.fromRGB(0, 255, 255)
-		return
-	end
-	end
-			Ranktag.Text = "Member"
-			Ranktag.TextColor3 = Color3.fromRGB(13, 255, 0)
+		for _, id in pairs(Coo) do
+			if Player.UserId == id then
+				Ranktag.Text = "COO"
+				Ranktag.TextColor3 = Color3.fromRGB(255, 0, 0)
+				return
+			end
+		end
+		for _, id2 in pairs(Developer) do
+			if Player.UserId == id2 then
+				Ranktag.Text = "Developer"
+				Ranktag.TextColor3 = Color3.fromRGB(0, 255, 255)
+				return
+			end
+		end
+		Ranktag.Text = "Member"
+		Ranktag.TextColor3 = Color3.fromRGB(13, 255, 0)
 	end
 end
-coroutine.wrap(HYEEGB_fake_script)()
-local function OABPS_fake_script() -- Main.LocalScript 
+coroutine.wrap(FOJUUCT_fake_script)()
+local function PFZWQ_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 
 	task.wait(2)
 	warn("Pleas report any errors to the discord!")
 end
-coroutine.wrap(OABPS_fake_script)()
-local function KMKNC_fake_script() -- Text.LocalScript 
-	local script = Instance.new('LocalScript', Text)
-
-	
-end
-coroutine.wrap(KMKNC_fake_script)()
-local function NULA_fake_script() -- Clear.LocalScript 
+coroutine.wrap(PFZWQ_fake_script)()
+local function OTJOUVT_fake_script() -- Clear.LocalScript 
 	local script = Instance.new('LocalScript', Clear)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Text.Text = ""
-	end)
-	
-end
-coroutine.wrap(NULA_fake_script)()
-local function RDNVYYY_fake_script() -- TextLabel_13.LocalScript 
-	local script = Instance.new('LocalScript', TextLabel_13)
-
-	
-	
-end
-coroutine.wrap(RDNVYYY_fake_script)()
-local function UDDDBF_fake_script() -- TextLabel_14.LocalScript 
-	local script = Instance.new('LocalScript', TextLabel_14)
-
-	
-	
-end
-coroutine.wrap(UDDDBF_fake_script)()
-local function MRPS_fake_script() -- Execute.LocalScript 
-	local script = Instance.new('LocalScript', Execute)
-
-	
-	
-end
-coroutine.wrap(MRPS_fake_script)()
-local function IMRJT_fake_script() -- Clear_2.LocalScript 
-	local script = Instance.new('LocalScript', Clear_2)
 
 	local ClearButton = script.Parent
 	local TextBox = ClearButton.Parent
 	ClearButton.MouseButton1Click:Connect(function()
 		TextBox.Text = ""
 	end)
-	
+
 end
-coroutine.wrap(IMRJT_fake_script)()
-local function WRFKE_fake_script() -- Execute_2.LocalScript 
-	local script = Instance.new('LocalScript', Execute_2)
+coroutine.wrap(OTJOUVT_fake_script)()
+local function DPMXTUR_fake_script() -- Execute.LocalScript 
+	local script = Instance.new('LocalScript', Execute)
 
 	local TextBox = script.Parent.Parent
-	
+
 	local ExecuteButton = script.Parent
 	ExecuteButton.MouseButton1Click:Connect(function()
 		local luaCode = TextBox.Text
 		local success, err = pcall(function()
 			loadstring(luaCode)()
 		end)
-	
+
 		if not success then
-			warn("The script is either pathced or does not work and for that reason your code could'nt run, if issue stays even after using more scripts,contact developers, Error Code: 1" .. err)
+			warn("ERROR  execution did not work and for that reason your code could not run, if issue stays even after using more scripts,contact developers, Error Code: 1" .. err)
 		end
 	end)
-	
+
 end
-coroutine.wrap(WRFKE_fake_script)()
-local function BDIOQ_fake_script() -- OpenButton.LocalScript 
+coroutine.wrap(DPMXTUR_fake_script)()
+local function BTNW_fake_script() -- OpenButton.LocalScript 
 	local script = Instance.new('LocalScript', OpenButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Main.Visible = true
-	    script.Parent.Parent["Open Button"].Visible = false
+		script.Parent.Parent["Open Button"].Visible = false
 	end)
 end
-coroutine.wrap(BDIOQ_fake_script)()
-local function YBLWYZY_fake_script() -- OpenButton.Drag 
+coroutine.wrap(BTNW_fake_script)()
+local function CDCCYEX_fake_script() -- OpenButton.Drag 
 	local script = Instance.new('LocalScript', OpenButton)
 
 	local UserInputService = game:GetService("UserInputService")
-	
-	
+
+
 	local MainFrame = script.Parent
 	local TopBar = script.Parent
-	
+
 	local Camera = workspace:WaitForChild("Camera")
-	
+
 	local DragMousePosition
 	local FramePosition
-	
-	
+
+
 	local Draggable = false
-	
+
 	TopBar.InputBegan:Connect(function(input)
 		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
 			Draggable = true
@@ -996,13 +799,13 @@ local function YBLWYZY_fake_script() -- OpenButton.Drag
 			FramePosition= Vector2.new(MainFrame.Position.X.Scale, MainFrame.Position.Y.Scale)
 		end
 	end)
-	
+
 	TopBar.InputEnded:Connect(function(input)
 		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
 			Draggable = false
 		end
 	end)
-	
+
 	UserInputService.InputChanged:Connect(function(input)
 		if Draggable == true then
 			local NewPosition = FramePosition + ( (Vector2.new(input.Position.X, input.Position.Y) - DragMousePosition) / Camera.ViewportSize)
@@ -1010,5 +813,4 @@ local function YBLWYZY_fake_script() -- OpenButton.Drag
 		end
 	end)
 end
-coroutine.wrap(YBLWYZY_fake_script)()
--- FrostWareV2.DONT DELETE is disabled.
+coroutine.wrap(CDCCYEX_fake_script)()
